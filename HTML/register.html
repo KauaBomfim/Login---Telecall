@@ -7,38 +7,38 @@
         <meta name="keywords" content="telecall, comunicação, internet, telefonia, celular, plano">
         <title> Site oficial - Registro Telecall</title>
         <link rel="shortcut icon" href="/IMG/icontelecall.png" type="image/x-icon">
-        <link rel="stylesheet" href="/CSS/register.css">
+        <link rel="stylesheet" href="../CSS/register.css">
     </head>
     <body>
         <header>
-            <img src="/IMG/logotelecall.png" alt="logo da telecall">
+            <img src="../IMG/logotelecall.png" alt="logo da telecall">
         </header>
         <form method="post" autocomplete="on">
             <h1>Cadastro telecall</h1>
-            <label for="nome">Nome Completo</label> <br>
+            <label for="nome">Nome Completo</label> <br/>
             <input type="text" id="nome" name="Nome" placeholder="Digite aqui seu nome" minlength="15" maxlength="60" required> <br>
-            <label for="data">Data de nascimento</label> <br>
-            <input type="date" required> <br>
-            <label>Sexo</label> <br>
+            <label for="data">Data de nascimento</label> <br/>
+            <input type="date" required> <br/>
+            <label>Sexo</label> <br/>
             <input type="radio" id="rad_m" name="sexo" value="Masculino">
             <label for="rad_m">Masculino</label>
             <input type="radio" id="rad_f" name="sexo" value="Feminino">
-            <label for="rad_f">Feminino</label> <br>
-            <label for="cpf">CPF</label> <br>
-            <input type="number" id="cpf" name="cpf" placeholder="Digite aqui seu CPF" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required> <br>
-            <label for="celular">Celular</label> <br>
-            <input type="tel" placeholder="Digite aqui seu número" id="celular" name="celular" pattern="[0-9]{2}9[0-9]{8}" required> <br>
-            <label for="telefone">Telefone fixo</label> <br>
-            <input type="tel" placeholder="Digite aqui seu número" id="telefone" name="telefone" pattern="[0-9]{8}" required> <br>
-            <label for="endereco">Endereço</label> <br>
-            <input type="text" placeholder="Seu endereço completo" id="endereco" name="endereço" required> <br>
-            <label for="login">Nome login</label> <br>
-            <input type="text" id="login" name="login" placeholder="digite seu nome de login" pattern="[A-Za-z]{6}" maxlength="6" required> <br>
-            <label for="senha">Senha</label> <br>
-            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" pattern="[A-Za-z]{8}" maxlength="8" required> <br>
-            <label for="conf_senha">Confirme sua senha</label> <br>
-            <input type="password" id="conf_senha" name="senha" placeholder="Digite sua senha novamente" pattern="[A-Za-z]{8}" maxlength="8" required> <br>
-            <input type="submit" value="Crie sua conta telecall"> <br>
+            <label for="rad_f">Feminino</label> <br/>
+            <label for="cpf">CPF</label> <br/>
+            <input type="number" id="cpf" name="cpf" placeholder="Digite aqui seu CPF" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required> <br/>
+            <label for="celular">Celular</label> <br/>
+            <input type="tel" placeholder="Digite aqui seu número" id="celular" name="celular" pattern="[0-9]{2}9[0-9]{8}" required> <br/>
+            <label for="telefone">Telefone fixo</label> <br/>
+            <input type="tel" placeholder="Digite aqui seu número" id="telefone" name="telefone" pattern="[0-9]{8}" required> <br/>
+            <label for="endereco">Endereço</label> <br/>
+            <input type="text" placeholder="Seu endereço completo" id="endereco" name="endereço" required> <br/>
+            <label for="login">Nome login</label> <br/>
+            <input type="text" id="login" name="login" placeholder="Digite seu nome de login" pattern="[A-Za-z]{6}" maxlength="6" required> <br/>
+            <label for="senha">Senha</label> <br/>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" pattern="[A-Za-z]{8}" maxlength="8" required> <br/>
+            <label for="conf_senha">Confirme sua senha</label> <br/>
+            <input type="password" id="conf_senha" name="senha" placeholder="Digite sua senha novamente" pattern="[A-Za-z]{8}" maxlength="8" required> <br/>
+            <input type="submit" value="Crie sua conta telecall"> <br/>
 
             <p>Já tem uma conta? <a href="login.html">Login</a></p>
         </form>

@@ -125,6 +125,7 @@ main {
     background-color: var(--cor1);
     border: 1px solid var(--cor1);
     font-size: 11px;
+    margin-left: 23%;
 }
 
 #entrar:hover {
@@ -181,6 +182,7 @@ main {
     align-items: center;
     margin: 8px;
     border-radius: 6px;
+    padding: 0px 5px 0px 7px;
 }
 
 img {
