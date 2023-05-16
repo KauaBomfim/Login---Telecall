@@ -106,7 +106,7 @@ input {
 .nav_manual, .nav_auto {
     position: absolute;
     width: 100%;
-    margin-top: 35%;
+    margin-top: 30%;
     display: flex;
     justify-content: center;
     flex-direction: row;
