@@ -204,3 +204,75 @@ input {
     margin-left: -75%;
 }
 
+.slides {
+    width: 400%;
+    height: auto;
+    display: flex;
+
+}
+
+.slide {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.nav_manual, .nav_auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.nav_manual .manual_btn, .nav_auto div {
+    border: 1px solid var(--cor1);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav_manual .manual_btn:hover {
+    background-color: var(--cor1);
+}
+
+#radio1:checked ~ .nav_auto .auto_btn1 {
+    background-color: var(--cor1);
+}
+
+#radio2:checked ~ .nav_auto .auto_btn2 {
+    background-color: var(--cor1);
+}
+
+#radio3:checked ~ .nav_auto .auto_btn3 {
+    background-color: var(--cor1);
+}
+
+#radio4:checked ~ .nav_auto .auto_btn4 {
+    background-color: var(--cor1);
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro {
+    margin-left: -75%;
+}
