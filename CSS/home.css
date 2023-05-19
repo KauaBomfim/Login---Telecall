@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,600&display=swap');
 
 :root {
     --cor1: rgb(202,28,42);         /*Cor do header*/
@@ -324,4 +325,113 @@ input {
     margin-top: 60px;
     flex-direction: column;
     gap: 40px;
+}
+
+.eventos h1 {
+    text-align: center;
+    margin: 100px 0;
+    font-family: 'Sarala', sans-serif;
+    font-size: 40px;
+    color: #004A7A;
+}
+
+.contain_evento {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Sarala', sans-serif;
+}
+
+.box_evento {
+    overflow: hidden;
+    width: 240px;
+    
+}
+
+.box_evento h3 {
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.40);
+}
+
+.box_evento img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.box_evento img:hover {
+    transform: scale(1.2);
+}
+
+.slide-feed {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-feed h1 {
+    text-align: center;
+    margin: 100px 0;
+    font-family: 'Sarala', sans-serif;
+    font-size: 40px;
+    color: #004A7A;
+}
+
+.testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    row-gap: 30px;
+    overflow: hidden;
+}
+
+.testimonial .img-slide {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial .slide2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.slide2 p {
+    text-align: center;
+    padding: 0 160px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+
+}
+
+.slide2 i {
+    font-size: 30px;
+    color: var(--cor1);
+}
+
+.slide2 .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .nome_cliente {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.details .title_cliente {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
 }
