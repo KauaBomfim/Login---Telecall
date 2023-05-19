@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,600&display=swap');
 
 :root {
-    --cor1: rgb(202,28,42);         /*Cor do header*/
+    --cor1: #ca1c2a;         /*Cor do header*/
     --cor2: rgb(247, 41, 58);      /*Cor do header*/
     --cor3: rgb(51, 1, 1);        /*Cor do header*/
     --cor4: #70000E;             /*Cor detalhes*/
@@ -298,6 +298,7 @@ input {
 .contain_plano {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     font-family: 'Sarala', sans-serif;
 }
@@ -308,6 +309,7 @@ input {
     flex-direction: row;
     font-size: 18px;
     gap: 20px;
+    cursor: pointer;
 }
 
 .topico_contain:hover {
@@ -337,6 +339,7 @@ input {
 
 .contain_evento {
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-around;
     font-family: 'Sarala', sans-serif;
@@ -363,7 +366,7 @@ input {
 }
 
 .slide-feed {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -373,15 +376,16 @@ input {
 
 .slide-feed h1 {
     text-align: center;
-    margin: 100px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-family: 'Sarala', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     color: #004A7A;
 }
 
 .testimonial {
     position: relative;
-    max-width: 900px;
+    max-width: 80%;
     width: 100%;
     padding: 50px 0;
     row-gap: 30px;
@@ -395,7 +399,7 @@ input {
     border-radius: 50%;
 }
 
-.testimonial .slide2 {
+.testimonial .slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -403,35 +407,139 @@ input {
     gap: 30px;
 }
 
-.slide2 p {
+.slide p {
+    width: 1200px;
     text-align: center;
     padding: 0 160px;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400;
     color: #333;
 
 }
 
-.slide2 i {
+.slide i {
     font-size: 30px;
     color: var(--cor1);
 }
 
-.slide2 .details {
+.slide .details {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.details {
+    margin-bottom: 60px;
+}
+
 .details .nome_cliente {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: #333;
 }
 
 .details .title_cliente {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     color: #333;
+}
+
+.contain_sobre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    font-family: 'Sarala', sans-serif;
+}
+
+.sobre_telecall h1 {
+    text-align: left;
+    margin-left: 100px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 35px;
+    color: #004A7A;
+
+}
+
+.sobre_telecall p {
+    width: 650px;
+    font-size: 20px;
+
+}
+
+.sobre_telecall img {
+    width: 500px;
+    height: 500px;
+}
+
+.sobre_telecall img:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.rede_telecall {
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.288);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../IMG/mapa-fibra-rj.png);
+}
+
+.box-rede {
+    display: flex;
+    float: right;
+    position: relative;
+    top: 500px;
+    right: 100px;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    height: 230px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+    border: 1px solid #0170B9;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.box-rede h3 {
+    font-size: 22px;
+    color: #0074c2;
+}
+
+.box-rede button {
+    align-self: flex-end;
+    float: right;
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    background-color: var(--cor6);
+    border: 3px solid var(--cor6);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.box-rede button:hover {
+    color: var(--cor6);
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+.rede_telecall h1 {
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 100px;
+    font-family: 'Sarala', sans-serif;
+    font-size: 35px;
+    color: #0070bb;
 }
