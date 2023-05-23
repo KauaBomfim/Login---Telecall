@@ -571,12 +571,16 @@ footer {
 #footer_contacts img{
     width: 250px;
     margin-bottom: 100px;
-    margin-left: 60px;
+    margin-left: 10px;
 }
 
 #footer_socialmedia {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+}
+
+#footer_socialmedia a {
+    color: white;
 }
 
 #footer_socialmedia i {
