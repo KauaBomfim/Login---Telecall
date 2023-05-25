@@ -27,7 +27,7 @@ html {
 body {
     font-size: 100%;
 }
-
+    /*CSS MENU*/
 header {
     width: 100%;
     display: flex;
@@ -132,6 +132,8 @@ header button:hover::after {
 input {
     display: none;
 }
+
+    /*CSS HOME*/
 
 .slider {
     margin: 0 auto;
@@ -555,6 +557,8 @@ input {
     transition: 0.4s;
 }
 
+    /*CSS FOOTER*/
+
 footer {
     width: 100%;
     font-family: 'Inter', sans-serif;
@@ -618,6 +622,734 @@ footer {
     background-color: #0e0c0c;
 }
 
+    /*CSS MOBILIDADE*/
+
+.header_mob {
+    font-family: 'Sarala', sans-serif;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://bbl245.p3cdn1.secureserver.net/wp-content/uploads/2022/10/Banner-mobilidade.png?time=1682431254);
+}
+
+#title_mob {
+    display: flex;
+    font-size: 30px;
+    gap: 30px;
+    align-items: center;
+    color: #333;
+}
+
+#title_mob img {
+    width: 130px;
+    margin: 50px 0px 10px 100px;
+}
+
+#title_mob h1 {
+    margin-top: 40px;
+}
+
+.header_mob p {
+    font-size: 30px;
+    margin: 0px 10px 10px 100px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.header_mob button {
+    padding: 15px;
+    width: 170px;
+    margin: 20px 0px 0px 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+.header_mob button:hover {
+    color: var(--cor1);
+    background-color: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.486);
+}
+
+.content_mob {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.content_mob h2 {
+    font-size: 30px;
+}
+
+.content_mob hr {
+    margin-top: 10px;
+    width: 200px;
+    height: 5px;
+    border: none;
+    background-color: var(--cor1);
+}
+
+#content_box {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.box_mob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 330px;
+    height: 450px;
+    padding: 50px;
+    color: var(--cor1);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(0, 0, 0, 0.24);
+}
+
+.box_mob h3 {
+    text-align: center;
+    color: #333;
+}
+
+.box_mob:hover {
+    color: var(--cor4);
+    position: relative;
+    left: 3px;
+    top: 3px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.521);
+    border: 2px solid var(--cor1);
+    transition: 0.5s;
+}
+
+.box_mob i {
+    font-size: 50px;
+    border-radius: 50%;
+}
+
+.box_mob p {
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.box_mob button {
+    padding: 15px;
+    margin-top: 80px;
+    font-size: 16px;
+    border-radius: 50px;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.box_mob button:hover {
+    color: var(--cor1);
+    background-color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+    /*CSS SOLUÇÕES*/
+
+.header_sol {
+    font-family: 'Sarala', sans-serif;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://telecall.com/wp-content/uploads/2022/10/Banner-outras-solucoes.png);
+}
+
+#title_sol {
+    display: flex;
+    font-size: 30px;
+    gap: 30px;
+    align-items: center;
+    color: #333;
+}
+
+#title_sol img {
+    width: 130px;
+    margin: 50px 0px 10px 100px;
+}
+
+#title_sol h1 {
+    margin-top: 40px;
+}
+
+.header_sol p {
+    font-size: 30px;
+    margin: 0px 10px 10px 100px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.header_sol button {
+    padding: 15px;
+    width: 170px;
+    margin: 20px 0px 0px 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+.header_sol button:hover {
+    color: var(--cor1);
+    background-color: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.486);
+}
+
+.content_sol {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.content_sol h2 {
+    font-size: 30px;
+}
+
+.content_sol hr {
+    margin-top: 10px;
+    width: 200px;
+    height: 5px;
+    border: none;
+    background-color: var(--cor1);
+}
+
+#content_sol {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.box_sol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 330px;
+    height: 450px;
+    padding: 50px;
+    color: var(--cor1);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(0, 0, 0, 0.24);
+}
+
+.box_sol h3 {
+    text-align: center;
+    color: #333;
+}
+
+.box_sol:hover {
+    color: var(--cor4);
+    position: relative;
+    left: 3px;
+    top: 3px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.521);
+    border: 2px solid var(--cor1);
+    transition: 0.5s;
+}
+
+.box_sol i {
+    font-size: 50px;
+    border-radius: 50%;
+}
+
+.box_sol p {
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.box_sol button {
+    padding: 15px;
+    margin-top: 80px;
+    font-size: 16px;
+    border-radius: 50px;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.box_sol button:hover {
+    color: var(--cor1);
+    background-color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+    /*CSS REDE E INFRAESTRTURA*/
+
+.header_rede {
+    font-family: 'Sarala', sans-serif;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://bbl245.p3cdn1.secureserver.net/wp-content/uploads/2022/10/Banner-Rede-e-Infraestrutura.png?time=1682518957");
+}
+
+#title_rede {
+    display: flex;
+    font-size: 30px;
+    gap: 30px;
+    align-items: center;
+    color: #333;
+}
+
+#title_rede img {
+    width: 130px;
+    margin: 50px 0px 10px 100px;
+}
+
+#title_rede h1 {
+    margin-top: 40px;
+}
+
+.header_rede p {
+    font-size: 30px;
+    margin: 0px 10px 10px 100px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.header_rede button {
+    padding: 15px;
+    width: 170px;
+    margin: 20px 0px 0px 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+.header_rede button:hover {
+    color: var(--cor1);
+    background-color: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.486);
+}
+
+.content_rede {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.content_rede h2 {
+    font-size: 30px;
+}
+
+.content_rede hr {
+    margin-top: 10px;
+    width: 200px;
+    height: 5px;
+    border: none;
+    background-color: var(--cor1);
+}
+
+#content_rede {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.box_rede {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 330px;
+    height: 450px;
+    padding: 50px;
+    color: var(--cor1);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(0, 0, 0, 0.24);
+}
+
+.box_rede h3 {
+    text-align: center;
+    color: #333;
+}
+
+.box_rede:hover {
+    color: var(--cor4);
+    position: relative;
+    left: 3px;
+    top: 3px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.521);
+    border: 2px solid var(--cor1);
+    transition: 0.5s;
+}
+
+.box_rede i {
+    font-size: 50px;
+    border-radius: 50%;
+}
+
+.box_rede p {
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.box_rede button {
+    padding: 15px;
+    margin-top: 80px;
+    font-size: 16px;
+    border-radius: 50px;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.box_rede button:hover {
+    color: var(--cor1);
+    background-color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+    /*CSS INTERNET*/
+
+.header_net {
+    font-family: 'Sarala', sans-serif;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://bbl245.p3cdn1.secureserver.net/wp-content/uploads/2022/10/Banner-internet.png?time=1682517151");
+}
+
+#title_net {
+    display: flex;
+    font-size: 30px;
+    gap: 30px;
+    align-items: center;
+    color: #333;
+}
+
+#title_net img {
+    width: 130px;
+    margin: 50px 0px 10px 100px;
+}
+
+#title_net h1 {
+    margin-top: 40px;
+}
+
+.header_net p {
+    font-size: 30px;
+    margin: 0px 10px 10px 100px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.header_net button {
+    padding: 15px;
+    width: 170px;
+    margin: 20px 0px 0px 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+.header_net button:hover {
+    color: var(--cor1);
+    background-color: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.486);
+}
+
+.content_net {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.content_net h2 {
+    font-size: 30px;
+}
+
+.content_net hr {
+    margin-top: 10px;
+    width: 200px;
+    height: 5px;
+    border: none;
+    background-color: var(--cor1);
+}
+
+#content_net {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+#content2 {
+    margin-top: 0px;
+}
+
+.box_net {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 330px;
+    height: 450px;
+    padding: 50px;
+    color: var(--cor1);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(0, 0, 0, 0.24);
+}
+
+.box_net h3 {
+    text-align: center;
+    color: #333;
+}
+
+.box_net:hover {
+    color: var(--cor4);
+    position: relative;
+    left: 3px;
+    top: 3px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.521);
+    border: 2px solid var(--cor1);
+    transition: 0.5s;
+}
+
+.box_net i {
+    font-size: 50px;
+    border-radius: 50%;
+}
+
+.box_net p {
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.box_net button {
+    padding: 15px;
+    margin-top: 80px;
+    font-size: 16px;
+    border-radius: 50px;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.box_net button:hover {
+    color: var(--cor1);
+    background-color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+    /*CSS EVENTOS*/
+
+.header_event {
+    font-family: 'Sarala', sans-serif;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://bbl245.p3cdn1.secureserver.net/wp-content/uploads/2022/10/Banner-Eventos.png?time=1682606003");
+}
+
+#title_event {
+    display: flex;
+    font-size: 30px;
+    gap: 30px;
+    align-items: center;
+    color: #333;
+}
+
+#title_event img {
+    width: 130px;
+    margin: 50px 0px 10px 100px;
+}
+
+#title_rede h1 {
+    margin-top: 40px;
+}
+
+.header_event p {
+    font-size: 30px;
+    margin: 0px 10px 10px 100px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.header_event button {
+    padding: 15px;
+    width: 170px;
+    margin: 20px 0px 0px 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+.header_event button:hover {
+    color: var(--cor1);
+    background-color: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.486);
+}
+
+.content_event {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.content_event h2 {
+    font-size: 30px;
+}
+
+.content_event hr {
+    margin-top: 10px;
+    width: 200px;
+    height: 5px;
+    border: none;
+    background-color: var(--cor1);
+}
+
+#content_event {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.box_event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 330px;
+    height: 500px;
+    padding: 50px;
+    color: var(--cor1);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(0, 0, 0, 0.24);
+}
+
+.box_event h3 {
+    text-align: center;
+    color: #333;
+}
+
+.box_event:hover {
+    color: var(--cor4);
+    position: relative;
+    left: 3px;
+    top: 3px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.521);
+    border: 2px solid var(--cor1);
+    transition: 0.5s;
+}
+
+.box_event i {
+    font-size: 50px;
+    border-radius: 50%;
+}
+
+.box_event p {
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.box_event button {
+    padding: 15px;
+    
+    font-size: 16px;
+    border-radius: 50px;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.box_event button:hover {
+    color: var(--cor1);
+    background-color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+}
 /* Media Querys*/
 
 @media screen and (max-width: 768px) {
