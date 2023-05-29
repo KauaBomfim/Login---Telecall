@@ -1350,6 +1350,152 @@ footer {
     transition: 0.3s;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
 }
+
+    /*CSS TELEFONIA*/
+
+.header_tele{
+    font-family: 'Sarala', sans-serif;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../IMG/telefonia-header.jpg");
+}
+
+#title_telefonia {
+    display: flex;
+    font-size: 30px;
+    gap: 30px;
+    align-items: center;
+    color: #333;
+}
+
+#title_telefonia img {
+    width: 130px;
+    margin: 50px 0px 10px 100px;
+}
+
+#title_telefonia h1 {
+    margin-top: 40px;
+}
+
+.header_tele p {
+    font-size: 30px;
+    margin: 0px 10px 10px 100px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.header_tele button {
+    padding: 15px;
+    width: 170px;
+    margin: 20px 0px 0px 100px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
+.header_tele button:hover {
+    color: var(--cor1);
+    background-color: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.486);
+}
+
+.content_tele {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.content_tele h2 {
+    font-size: 30px;
+}
+
+.content_tele hr {
+    margin-top: 10px;
+    width: 200px;
+    height: 5px;
+    border: none;
+    background-color: var(--cor1);
+}
+
+#content_tele {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.box_tele {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 330px;
+    height: 450px;
+    padding: 50px;
+    color: var(--cor1);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(0, 0, 0, 0.24);
+}
+
+.box_tele h3 {
+    text-align: center;
+    color: #333;
+}
+
+.box_tele:hover {
+    color: var(--cor4);
+    position: relative;
+    left: 3px;
+    top: 3px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.521);
+    border: 2px solid var(--cor1);
+    transition: 0.5s;
+}
+
+.box_tele i {
+    font-size: 50px;
+    border-radius: 50%;
+}
+
+.box_tele p {
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.box_tele button {
+    padding: 15px;
+    margin-top: 80px;
+    font-size: 16px;
+    border-radius: 50px;
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    background-color: var(--cor1);
+    border: 3px solid var(--cor1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.box_tele button:hover {
+    color: var(--cor1);
+    background-color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.24);
+}
+
 /* Media Querys*/
 
 @media screen and (max-width: 768px) {
