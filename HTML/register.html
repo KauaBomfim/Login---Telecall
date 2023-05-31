@@ -1,49 +1,229 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="telecall, comunicação, internet, telefonia, celular, plano">
-        <title> Site oficial - Registro Telecall</title>
-        <link rel="shortcut icon" href="../IMG/icontelecall.png" type="image/x-icon">
-        <link rel="shortcut icon" href="../IMG/icontelecall.png" type="image/x-icon">
-        <link rel="stylesheet" href="../CSS/register.css">
-    </head>
-    <body>
-        <header class="cabeçalho_registro">
-            <img src="../IMG/logotelecall.png" alt="logo da telecall">
-        </header>
-        <form method="post" autocomplete="on">
-            <h1>Cadastro Telecall</h1>
-            <label for="nome">Nome Completo</label> <br/>
-            <input type="text" id="nome" name="Nome" placeholder="Digite aqui seu nome" minlength="15" maxlength="60" required> <br/>
-            <label for="data">Data de nascimento</label> <br/>
-            <input type="date" required> <br/>
-            <label>Sexo</label> <br/>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="telecall, comunicação, internet, telefonia, celular, plano" />
+    <title> Site oficial - Registro Telecall</title>
+    <link rel="shortcut icon" href="../IMG/icontelecall.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../IMG/icontelecall.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../CSS/register.css" />
+    <script src="text/javascript"></script>
+</head>
+
+<body onload="dataMax();">
+    <header class="cabeçalho_registro">
+        <a href="../HTML/home.html"><img src="../IMG/logotelecall.png" alt="logo da telecall"/></a>
+    </header>
+    <form method="post" autocomplete="off" id="form">
+        <h1>Cadastro Telecall</h1>
+        <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" class="inputs required" name="Nome" placeholder="Digite aqui seu nome"
+                maxlength="60" autofocus oninput="nameValidate()">
+            <span class="span-required">Nome deve ter no mínimo 15 caracteres. </span>
+            <span class="span-right">✓</span>
+        </div>
+
+        <div>
+            <label for="dataNasc">Data de nascimento</label>
+            <input type="date" id="dataNasc" required>
+        </div>
+
+        <div>
+            <label>Sexo</label>
+
             <input type="radio" id="rad_m" name="sexo" value="Masculino">
             <label for="rad_m">Masculino</label>
-            <input type="radio" id="rad_f" name="sexo" value="Feminino">
-            <label for="rad_f">Feminino</label> <br/>
-            <label for="cpf">CPF</label> <br/>
-            <input type="number" id="cpf" name="cpf" placeholder="Digite seu CPF" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required> <br/>
-            <label for="celular">Celular</label> <br/>
-            <input type="tel" placeholder="(xx) xxxxx-xxxx" id="celular" name="celular" pattern="[0-9]{2}9[0-9]{8}" required> <br/>
-            <label for="telefone">Telefone fixo</label> <br/>
-            <input type="tel" placeholder="Digite aqui seu telefone" id="telefone" name="telefone" pattern="[0-9]{8}" required> <br/>
-            <label for="endereco">Endereço</label> <br/>
-            <input type="text" placeholder="Seu endereço completo" id="endereco" name="endereço" required> <br/>
-            <label for="login">Nome login</label> <br/>
-            <input type="text" id="login" name="login" placeholder="Digite seu nome de login" pattern="[A-Za-z]{6}" maxlength="6" required> <br/>
-            <label for="senha">Senha</label> <br/>
-            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" pattern="[A-Za-z]{8}" maxlength="8" required> <br/>
-            <label for="conf_senha">Confirme sua senha</label> <br/>
-            <input type="password" id="conf_senha" name="senha" placeholder="Digite sua senha novamente" pattern="[A-Za-z]{8}" maxlength="8" required> <br/>
-            <input type="submit" value="Crie sua conta telecall"> <br/>
 
-            <p>Já tem uma conta? <a href="login.html">Login</a></p>
-        </form>
-        
-    
-    </body>
+            <input type="radio" id="rad_f" name="sexo" value="Feminino">
+            <label for="rad_f">Feminino</label>
+
+            <input type="radio" id="rad_o" name="sexo" value="Outros">
+            <label for="rad_o">Outros</label>
+        </div>
+
+        <div>
+            <label for="cpf">CPF</label> <br />
+            <input type="text" id="cpf" class="inputs required" name="cpf" placeholder="Digite seu CPF"
+                autocomplete="off" maxlength="14" oninput="cpfValidate()">
+            <span class="span-required">Insira um CPF válido. </span>
+            <span class="span-right">✓</span>
+        </div>
+
+        <div>
+            <label for="celular">Celular</label>
+            <input type="tel" placeholder="xx-xxxxxxxxx" id="celular" class="inputs required" name="celular"
+                maxlength="11" oninput="number1Validate()">
+            <span class="span-required">O número precisa conter o DDD com algum número válido. </span>
+            <span class="span-right">✓</span>
+        </div>
+
+        <div>
+            <label for="telefone">Telefone fixo</label>
+            <input type="tel" placeholder="xx-xxxxxxxxx" id="telefone" class="inputs required" name="telefone"
+                maxlength="10" oninput="number2Validate()">
+            <span class="span-required">O número precisa conter o DDD com algum número válido. </span>
+            <span class="span-right">✓</span>
+        </div>
+
+        <div>
+            <label for="endereco">Endereço</label>
+            <input type="text" placeholder="Endereço Completo" id="endereco" class="inputs required"
+                name="endereço" maxlength="50" oninput="enderecoValidate()">
+            <span class="span-required">O campo endereço precisa ser preenchido. </span>
+            <span class="span-right">✓</span>
+        </div>
+
+        <div>
+            <label for="login">Nome login</label>
+            <input type="text" id="login" class="inputs required" name="login" placeholder="Digite seu nome de login"
+                pattern="[A-Za-z]{6}" maxlength="6" oninput="loginValidate()">
+            <span class="span-required">Este campo Login deve possuir 6 caracteres alfabéticos. </span>
+            <span class="span-right">Login Válido ✓</span>
+        </div>
+
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" class="inputs required" name="senha" placeholder="Digite sua senha" oninput="senhaValidate()">
+            <span class="span-required">Este campo deve possuir 8 caracteres alfabéticos. </span>
+            <span class="span-right">✓</span>
+        </div>
+
+        <div>
+            <label for="conf_senha">Confirme sua senha</label>
+            <input type="password" id="conf_senha" class="inputs required" name="senha"
+                placeholder="Digite sua senha novamente" oninput="senhaComparar()">
+            <span class="span-required">Este campo precisa corresponder com o campo senha. </span>
+            <span class="span-right">✓</span>
+        </div>
+
+        <input type="submit" value="Crie sua conta telecall">
+
+        <p>Já tem uma conta? <a href="login.html">Login</a></p>
+    </form>
+
+
+    <script>
+        const form = document.getElementById('form');
+        const lbl = document.querySelectorAll('label');
+        const campos = document.querySelectorAll('.required');
+        const spans = document.querySelectorAll('.span-required');
+        const spanright = document.querySelectorAll('.span-right');
+        const cpf = document.querySelector('#cpf');
+        const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+
+        function setError(index) {
+            campos[index].style.border = '2px solid #e63636';
+            spanright[index].style.display = '';
+            spans[index].style.display = 'block';
+        }
+
+        function removeError(index) {
+            campos[index].style.border = '2px solid #42BB33';
+            spans[index].style.display = '';
+            spanright[index].style.display = 'block';
+        }
+
+
+        function nameValidate() {
+            if (campos[0].value.length < 15) {
+                setError(0);
+            }
+            else {
+                removeError(0);
+            }
+        }
+
+        function dataMax() {
+            let dataAtual = new Date();
+            let dia = dataAtual.getDate();
+            let mes = dataAtual.getMonth() + 1;
+            let ano = dataAtual.getFullYear();
+            let data = ano + '-' + mes + '-' + dia;
+            document.getElementById("dataNasc").max = data;
+        }
+
+        function cpfValidate() {
+            if (campos[1].value.length != 14) {
+                setError(1);
+            }
+            else {
+                removeError(1);
+            }
+        }
+
+        function number1Validate() {
+            if (campos[2].value.length != 11) {
+                setError(2);
+            }
+            else {
+                removeError(2);
+            }
+        }
+
+        function number2Validate() {
+            if (campos[3].value.length != 10) {
+                setError(3);
+            }
+            else {
+                removeError(3);
+            }
+        }
+
+        function enderecoValidate() {
+            if (campos[4].value.length < 8) {
+                setError(4);
+            }
+            else {
+                removeError(4);
+            }
+        }
+
+        function loginValidate() {
+            if (campos[5].value.length != 6) {
+                setError(5);
+            }
+            else {
+                removeError(5);
+            }
+        }
+
+        function senhaValidate() {
+            if (campos[6].value.length < 8) {
+                setError(6);
+            }
+            else {
+                removeError(6);
+                senhaComparar();
+            }
+        }
+
+        function senhaComparar() {
+            if (campos[6].value == campos[7].value && campos[7].value.length >= 8) {
+                removeError(7);
+            }
+            else {
+                setError(7);
+            }
+        }
+
+        cpf.addEventListener('keypress', () => {
+            let cpflength = cpf.value.length;
+
+            if (cpflength == 3 || cpflength == 7) {
+                cpf.value += '.'
+            }
+            else if (cpflength == 11) {
+                cpf.value += '-'
+            }
+        })
+
+    </script>
+
+</body>
+
 </html>
