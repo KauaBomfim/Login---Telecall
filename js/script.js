@@ -32,7 +32,7 @@ function proximaImg(){
     document.getElementById('radio'+cont).checked = true
 }
 
-const btnMobile = document.getElementById('btn-mobile')
+const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu() {
     const menu = document.getElementById('menu');
@@ -40,4 +40,3 @@ function toggleMenu() {
 }
 
 btnMobile.addEventListener('click', toggleMenu);
-

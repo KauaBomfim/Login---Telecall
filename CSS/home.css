@@ -2520,18 +2520,33 @@ footer {
         top: 70px;
         right: 0;
         height: 0px;
-        background-image: linear-gradient(to right, var(--cor3),var(--cor1), var(--cor2));
+        background-image: linear-gradient(to right, var(--cpaas-cor1), var(--cpaas-cor2));
         z-index: 1;
         transition: 0.4s;
         visibility: hidden;
         overflow-y: hidden;
     }
 
-
-    #menucp.activecp #item-menu-cpaas {
+    #menucp:hover #item-menu-cpaas {
         display: block;
         height: calc(40vh - 70px);
         visibility: visible;
+    }
+
+    #item-menu-cpaas a {
+        font-size: 20px;
+        padding: 0rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid var(--cpaas-cor1);
+    }
+
+    nav li:hover {
+        transform: none;
+        background-color: rgba(255, 255, 255, 0.075);
+    }
+
+    nav a:hover::before {
+        visibility: hidden;
     }
 
     #btn-mobile-cpaas {
@@ -2546,6 +2561,10 @@ footer {
         border-radius: 50%;
         cursor: pointer;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.39);
+    }
+
+    .dropdown:hover .drop-menu {
+        display: none;
     }
 }
 
