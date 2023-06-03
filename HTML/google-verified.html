@@ -12,16 +12,70 @@
     </head>
     <body>
         <header class="cabeçalho_cpaas">
-            <a href="../HTML/home.html"><img src="../IMG/icontelecall.png" alt="logo da telecall"/></a>
-            <nav id="menu">
-                <a href="../HTML/Internet.html">Internet</a>
-                <a href="../HTML/telefonia.html">Telefonia</a>
-                <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>
-                <a href="../HTML/mob.html">Mobilidade</a>
-                <a href="../HTML/cpaas.html">CPaas</a>
-                <a href="../HTML/Outras-solucoes.html">Outras soluções</a>
+            <a href="../HTML/home.html" id="logo"><img src="../IMG/icontelecall.png" alt="logo da telecall"/></a>
+            <nav id="menucp">
+                <ul id="item-menu-cpaas">
+                    <li class="dropdown">
+                        <a href="../HTML/Internet.html">Internet</a>
+                        
+                        <div class="drop-menu">
+                            <a href="">Internet Dedicada</a>
+                            <a href="">Banda Larga</a>
+                            <a href="">Wi-Fi</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../HTML/telefonia.html">Telefonia</a>
+
+                        <div class="drop-menu">
+                            <a href="">PABX IP Virtual</a>
+                            <a href="">E1 / SIP Trunk</a>
+                            <a href="">Números 0800/40xx</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>
+
+                        <div class="drop-menu">
+                            <a href="">Ponto-a-Ponto</a>
+                            <a href="">MPLS</a>
+                            <a href="">FIbra Apagada e Dutos</a>
+                            <a href="">Co-locations</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../HTML/mob.html">Mobilidade</a>
+
+                        <div class="drop-menu">
+                            <a href="">Celular Empresarial</a>
+                            <a href="">MVNA/E</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../HTML/cpaas.html">CPaas</a>
+
+                        <div class="drop-menu">
+                            <a href="../HTML/2fa.html">2FA</a>
+                            <a href="../HTML/numero-mask.html">Número Máscara</a>
+                            <a href="../HTML/google-verified.html">Google Verified Calls</a>
+                            <a href="../HTML/SMS.html">SMS Programável</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>
+
+                        <div class="drop-menu">
+                            <a href="">Outsourcing de Hardware</a>
+                            <a href="">Eventos</a>
+                        </div>
+                    </li>
+                </ul>
+                <button id="btn-mobile-cpaas"><i class="fa-solid fa-bars"></i></button>
             </nav>
-            <a href="login.html"><button><i class="fa-solid fa-user"></i>Área do cliente</button></a>
+
+            <div class="btn-cpaas">
+                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i>Área do cliente</button></a>
+            </div>
         </header>
         <section class="sobre_gvc">
             <h1>GOOGLE VERIFIED CALLS</h1>

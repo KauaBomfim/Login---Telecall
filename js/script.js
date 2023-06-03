@@ -32,6 +32,12 @@ function proximaImg(){
     document.getElementById('radio'+cont).checked = true
 }
 
+const btnMobile = document.getElementById('btn-mobile')
 
-/*VALIDAÇÃO DA TELA REGISTER (FORM)*/
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+}
+
+btnMobile.addEventListener('click', toggleMenu);
 
