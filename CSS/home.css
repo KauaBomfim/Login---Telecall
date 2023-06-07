@@ -816,7 +816,7 @@ footer {
 
 .header_sol {
     font-family: 'Sarala', sans-serif;
-    height: 50vh;
+    height: 60vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1401,7 +1401,7 @@ footer {
 
 .header_tele{
     font-family: 'Sarala', sans-serif;
-    height: 50vh;
+    height: 60vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2473,7 +2473,7 @@ footer {
 
     #menu.active #item-menu {
         display: block;
-        height: calc(40vh - 70px);
+        height: calc(40vh - 30px);
         visibility: visible;
     }
 
@@ -2640,6 +2640,203 @@ footer {
     }
 }
 
+    /*MEDIA INTERNET*/
+
+@media screen and (max-width: 768px) {
+    #title_net {
+        font-size: 20px; 
+    }
+
+    #title_net img {
+        width: 100px;
+        margin: 50px 0px 10px 20px;
+    }
+
+    .header_net p {
+        font-size: 20px;
+        margin: 0px 10px 10px 100px;
+    }
+
+    .header_net button {
+        width: 170px;
+        margin: 20px 0px 0px 100px;
+    }
+
+    #content_net {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
+    #content2 h2 {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    #content2 hr {
+        width: 200px;
+        margin-left: 20px;
+    }
+}
+
+    /*MEDIA TELEFONIA*/
+
+@media screen and (max-width: 768px) {
+    #title_telefonia {
+        display: flex;
+        font-size: 20px;
+    }
+
+    #title_telefonia img {
+        width: 100px;
+        margin: 50px 0px 10px 20px;
+    }
+
+    .header_tele p {
+        font-size: 20px;
+        margin: 0px 10px 10px 20px;
+    }
+
+    #content_tele {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content_tele2 h2 {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    #content_tele2 hr {
+        width: 200px;
+        margin-left: 20px;
+    }
+}
+
+    /*MEDIA REDE E INFRAESTRTURA*/
+
+@media screen and (max-width: 768px) {
+    #title_rede {
+        font-size: 16px;
+    }
+
+    #title_rede img {
+        width: 100px;
+        margin: 50px 0px 10px 20px;
+    }
+
+    .header_rede p {
+        font-size: 20px;
+        margin: 0px 10px 10px 20px;
+    }
+
+    .content_rede h2 {
+        font-size: 18px;
+    }
+
+    #content_rede {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #content_rede {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+    /*MEDIA MOBILIDADE*/
+
+@media screen and (max-width: 768px) {
+    #title_mob {
+        font-size: 16px;
+    }
+
+    #title_mob img {
+        width: 100px;
+        margin: 50px 0px 10px 20px;
+    }
+
+    .header_mob p {
+        font-size: 20px;
+        margin: 0px 10px 10px 20px;
+    }
+
+    .content_mob h2 {
+        font-size: 24px;
+    }
+
+    #content_box {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+    /*MEDIA SOLUÇÕES*/
+
+@media screen and (max-width: 768px) {
+    #title_sol {
+        font-size: 16px;
+    }
+
+    #title_sol img {
+        width: 100px;
+        margin: 50px 0px 10px 20px;
+    }
+
+    .header_sol p {
+        font-size: 20px;
+        margin: 0px 10px 10px 20px;
+    }
+
+    .content_sol h2 {
+        font-size: 24px;
+    }
+    
+    #content_sol {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+    /*MEDIA EVENTOS*/
+
+@media screen and (max-width: 768px) {
+    #title_event {
+        font-size: 16px;
+    }
+
+    #title_event img {
+        width: 100px;
+        margin: 50px 0px 10px 20px;
+    }
+
+    .header_event p {
+        font-size: 20px;
+        margin: 0px 10px 10px 20px;
+    }
+
+    .content_event h2 {
+        font-size: 24px;
+    }
+    
+    #content_event {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #content_event {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
     /*MEDIA CPAAS*/
 
 @media screen and (max-width: 768px) {
@@ -2758,8 +2955,338 @@ footer {
     /*MEDIA 2FA*/
 
 @media screen and (max-width: 768px) {
+    .sobre_2fa h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 40px;
+    }
     
+    .sobre_2fa h2 {
+        font-size: 25px;
+        margin: 0px 0px 0px 20px;
+    }
+    
+    .sobre_2fa hr {
+        width: 150px;
+        margin: 0px 0px 50px 20px;
+    }
+    
+    #text_2fa {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    #text_2fa p {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    #vantagens_2fa h3 {
+        margin: 50px 0px 0px 20px;
+    }
+    
+    #vantagens_2fa p {
+        margin: 20px 0px 0px 20px;
+    }
+
+    .seguraca_2fa {
+        margin: 50px 0px 0px 20px;
+    }
+
+    .funcao_2fa h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 30px;
+    }
+    
+    .funcao_2fa hr {
+        width: 250px;
+        margin: 0px 0px 50px 20px;
+    }
+    
+    .funcao_2fa img {
+        width: 100%;
+    }
+
+    .usuarios_2fa h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 40px;
+    }
+    
+    .usuarios_2fa hr {
+        width: 250px;
+        margin: 0px 0px 50px 20px;
+    }
+    
+    .usuarios_2fa img {
+        width: 100%;
+    }
 }
+
+    /*MEDIA NÚMERO MÁSCARA*/
+
+@media screen and (max-width: 768px) {
+    .sobre_NM h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 40px;
+    }
+    
+    .sobre_NM h2 {
+        font-size: 25px;
+        margin: 0px 0px 0px 20px;
+    }
+    
+    .sobre_NM hr {
+        width: 150px;
+        margin: 0px 0px 50px 20px;
+    }
+    
+    #vantagens_NM {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #vantagens_NM p {
+        font-size: 20px;
+        margin: 20px 0px 0px 20px;
+    }
+    
+    #vantagens_NM i {
+        margin-right: 10px;
+        font-size: 30px;
+        color: var(--cpaas-cor1);
+    }
+    
+    #contain_NM {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recursos_NM {
+        margin: 50px 0px 0px 20px;
+    }
+    
+    .recursos_NM h2 {
+        font-size: 35px;
+    }
+    
+    .recursos_NM hr {
+        width: 250px;
+    }
+    
+    .recursos_NM p {
+        width: 70%;
+        font-size: 20px;
+    }
+
+    .funcao_NM h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 30px;
+    }
+    
+    .funcao_NM hr {
+        width: 250px;
+        margin: 0px 0px 50px 20px;
+    }
+    
+    .funcao_NM img {
+        width: 100%;
+    }
+
+    .usuarios_NM h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 40px;
+    }
+    
+    .usuarios_NM hr {
+        width: 250px;
+        margin: 0px 0px 50px 20px;
+    }
+    
+    .usuarios_NM img {
+        width: 100%;
+    }
+}
+
+/*MEDIA GOOGLE VERIFIED CALLS*/
+
+@media screen and (max-width: 768px) {
+    .sobre_gvc h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 25px;
+    }
+    
+    .sobre_gvc h2 {
+        font-size: 30px;
+        margin: 0px 0px 0px 30px;
+    }
+    
+    #gvc_sub {
+        width: 70%;
+        margin-top: 40px;
+        font-size: 25px;
+        color: #333333e0;
+    }
+    
+    .sobre_gvc hr {
+        width: 150px;
+        margin: 0px 0px 50px 20px;
+    }
+    
+    .sobre_gvc p {
+        margin: 50px 0px 0px 100px;
+        font-size: 20px;
+        width: 50%;
+    }
+    
+    #vantagens_gvc p {
+        font-size: 25px;
+        margin: 20px 0px 0px 20px;
+    }
+
+    #contain_gvc img {
+        display: none;
+    }
+
+    .recursos_gvc {
+        margin: 50px 0px 0px 20px;
+    }
+    
+    .recursos_gvc h2 {
+        font-size: 35px;
+    }
+    
+    .recursos_gvc hr {
+        width: 250px;
+    }
+    
+    .recursos_gvc p {
+        width: 70%;
+        font-size: 25px;
+    }
+
+    #info_gvc p {
+        font-size: 20px;
+    }
+
+    .funcao_gvc h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 30px;
+    }
+    
+    .funcao_gvc hr {
+        width: 250px;
+        margin: 0px 0px 50px 20px;
+    }
+    
+    .funcao_gvc img {
+        width: 100%;
+    }
+    
+    .compatibilidade_gvc p {
+        font-size: 16px;
+        width: 70%;
+    }
+    
+    .compatibilidade_gvc h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 30px;
+    }
+    
+    .compatibilidade_gvc hr {
+        width: 250px;
+        margin: 0px 0px 50px 20px;
+    }
+}
+
+    /*MEDIA SMS*/
+
+@media screen and (max-width: 768px) {
+    
+    .sobre_sms h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 30px;
+    }
+    
+    .sobre_sms h2 {
+        font-size: 25px;
+        margin: 0px 0px 0px 20px;
+    }
+    
+    #sms_sub {
+        width: 70%;
+        font-size: 20px;
+    }
+    
+    
+    .sobre_sms hr {
+        width: 250px;
+        margin: 0px 0px 50px 20px;
+    }
+    
+    .sobre_sms p {
+        margin: 50px 0px 0px 20px;
+        font-size: 20px;
+        width: 70%;
+    }
+    
+    #box_sms {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #vantagens_sms {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #vantagens_sms strong {
+        font-size: 40px;
+    }
+    
+    #vantagens_sms p {
+        font-size: 20px;
+        margin: 20px 0px 0px 20px;
+    }
+    
+    #contain_sms h2 {
+        font-size: 20px;
+    }
+    
+    .recursos_sms {
+        margin: 50px 0px 0px 25px;
+    }
+    
+    .recursos_sms h2 {
+        font-size: 35px;
+    }
+    
+    .recursos_sms hr {
+        width: 250px;
+    }
+    
+    #info_sms li {
+        font-size: 20px;
+    }
+    
+    .funcao_sms h1 {
+        margin: 100px 0px 0px 20px;
+        font-size: 40px;
+    }
+    
+    .funcao_sms hr {
+        width: 250px;
+        margin: 0px 0px 50px 20px;
+    }
+    
+    .funcao_sms img {
+        width: 100%;
+    }
+}
+    
 
 
     /*MEDIA MENU CPAAS*/
