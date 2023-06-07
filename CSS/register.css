@@ -157,6 +157,24 @@ form p {
     font-size: 14px;
 }
 
+button {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px 0 20px 0;
+    background-color: var(--cor1);
+    border: 1px solid var(--cor1);
+}
+
+button:hover {
+    background-color: #fff;
+    border: 1px solid var(--cor1);
+    color: var(--cor1);
+    transition-duration: 0.4s;
+}
+
 a {
     text-decoration: none;
 }

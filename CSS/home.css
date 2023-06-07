@@ -2452,6 +2452,10 @@ footer {
     /*MEDIA MENU*/
 
 @media screen and (max-width: 730px) {
+    #menu {
+        width: 100%;
+    }
+
     #item-menu {
         display: block;
         text-align: center;
@@ -2506,7 +2510,257 @@ footer {
     .dropdown:hover .drop-menu {
         display: none;
     }
+    
+    #btn-cliente {
+        height: 70px;
+    }
 }
+
+    /*MEDIA HOME*/
+
+@media screen and (max-width: 768px) {
+    .serviços_telecall h1 {
+        font-size: 30px;
+    }
+
+    .contain_serviços {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planos_mob h1 {
+        font-size: 25px;
+    }
+
+    .contain_plano {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contain_plano img {
+        width: 250px;
+        height: 200px;
+        margin-left: 80px;
+    }
+
+    .topico_contain {
+        width: 200px;
+    }
+
+    .event-title {
+        display: none;
+    }
+
+    .slide-feed h1 {
+        font-size: 20px;
+    }
+
+    .testimonial {
+        position: relative;
+        max-width: 80%;
+        width: 100%;
+        padding: 50px 0;
+        row-gap: 30px;
+        overflow: hidden;
+    }
+    
+    .testimonial .img-slide {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    
+    .slide p {
+        width: 500px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    
+    .details .nome_cliente {
+        font-size: 12px;
+    }
+    
+    .details .title_cliente {
+        font-size: 10px;
+    }
+
+    .rede_telecall {
+        background-position: center;
+    }
+    
+    .box-rede {
+        right: 10px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .box-rede h3 {
+        font-size: 12px;
+        color: #0074c2;
+    }
+    
+    .rede_telecall h1 {
+        font-size: 25px;
+    }
+
+    .sobre_telecall h1 {
+        font-size: 25px;
+    }
+
+    .contain_sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contain_sobre p {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .contain_sobre img {
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+@media screen and (max-width: 1440px) {
+    .topico_contain {
+        width: 300px;
+    }
+    
+    .contain_serviços {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slide p {
+        width: 900px;
+    }
+}
+
+    /*MEDIA CPAAS*/
+
+@media screen and (max-width: 768px) {
+    .btn-cpaas {
+        width: 100px;
+    }
+
+    #title_cpaas {
+        font-size: 20px;
+    }
+
+    .header_cpaas p {
+        font-size: 14px;
+        margin: 0px 10px 10px 50px;
+    }
+
+    .header_cpaas button {
+        margin: 20px 0px 0px 50px;
+    }
+
+    .sobre_cpaas {
+        margin: 100px 0px 0px 40px;
+    }
+    
+    .sobre_cpaas h1 {
+        font-size: 50px;
+    }
+
+    #text_sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #text_sobre p {
+        width: 280px;
+        margin-top: 40px;
+    }
+
+    #text_sobre img {
+        width: 300px;
+    }
+
+    .digital_cpaas {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .digital_cpaas h1 {
+        font-size: 30px;
+    }
+
+    .digital_cpaas img {
+        width: 300px;
+        margin-top: 50px;
+    }
+
+    #contain_uso {
+        display: flex;
+        width: 320px;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #solucoes_cpaas {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
+    .usuarios_cpaas h1 {
+        margin: 100px 0px 0px 10px;
+        font-size: 40px;
+    }
+
+    .usuarios_cpaas hr {
+        width: 150px;
+        margin: 0px 0px 50px 10px;
+    }
+
+    .usuarios_cpaas img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    
+    .sobre_cpaas {
+        margin: 100px 0px 0px 50px;
+    }
+
+    #text_sobre {
+        gap: 0px;
+    }
+
+    .digital_cpaas img {
+        width: 600px;
+        margin-right: 60px;
+    }
+
+    #contain_uso {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #solucoes_cpaas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+    /*MEDIA 2FA*/
+
+@media screen and (max-width: 768px) {
+    
+}
+
 
     /*MEDIA MENU CPAAS*/
 
@@ -2571,8 +2825,10 @@ footer {
 
     /*MEDIA FOOTER*/
 @media screen and (max-width: 768px) {
+    
     #footer_content{
-        grid-template-columns: repeat(1, 1fr);              /*Footer*/
+        grid-template-columns: repeat(1, 1fr);
         gap: 3rem;
+        padding: 3rem 2rem;
     }
 }
