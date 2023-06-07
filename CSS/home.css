@@ -2556,12 +2556,9 @@ footer {
     }
 
     .testimonial {
-        position: relative;
-        max-width: 80%;
         width: 100%;
         padding: 50px 0;
         row-gap: 30px;
-        overflow: hidden;
     }
     
     .testimonial .img-slide {
@@ -2573,7 +2570,7 @@ footer {
     
     
     .slide p {
-        width: 500px;
+        max-width: 550px;
         font-size: 10px;
         font-weight: 400;
     }
