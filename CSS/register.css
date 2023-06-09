@@ -60,6 +60,11 @@ form {
     display: none;
 }
 
+.lbl-tittle {
+    color: rgb(247, 41, 58);
+    font-weight: bold;
+}
+
 input[type=text], select {
     width: 90%;
     padding: 12px 20px;
@@ -131,7 +136,13 @@ input[type=password] {
     outline: none;
 }
 
-input[type=submit] {
+form p {
+    font-size: 14px;
+    color: var(--cor2);
+    text-align: center;
+}
+
+button {
     width: 220px;
     height: 30px;
     text-transform: uppercase;
@@ -144,28 +155,6 @@ input[type=submit] {
     border-radius: 15px;
     cursor: pointer;
     margin-left: 23%;
-}
-
-input[type=submit]:hover {
-    background-color: #fff;
-    border: 1px solid var(--cor1);
-    color: var(--cor1);
-    transition-duration: 0.4s;
-}
-
-form p {
-    font-size: 14px;
-}
-
-button {
-    width: 100%;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 15px;
-    border-radius: 15px;
-    margin: 20px 0 20px 0;
-    background-color: var(--cor1);
-    border: 1px solid var(--cor1);
 }
 
 button:hover {
@@ -182,4 +171,12 @@ a {
 a:hover {
     color: rgb(214, 10, 27);
     text-decoration: underline;
+}
+
+#span_cad {
+    font-size: 15px;
+    font-weight: bold;
+    color: #42BB33;
+    margin: 1px 0 5px 3px;
+    display: none;
 }
