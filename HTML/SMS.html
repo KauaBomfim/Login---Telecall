@@ -15,73 +15,83 @@
             <a href="../HTML/home.html" id="logo"><img src="../IMG/icontelecall.png" alt="logo da telecall"/></a>
             <nav id="menucp">
                 <ul id="item-menu-cpaas">
+
                     <li class="dropdown">
-                        <a href="../HTML/Internet.html">Internet</a>
+                        <a href="../HTML/Internet.html">Internet</a>    <!--item do menu-->
                         
                         <div class="drop-menu">
                             <a href="">Internet Dedicada</a>
-                            <a href="">Banda Larga</a>
+                            <a href="">Banda Larga</a>          <!--Dropdown de itens do menu-->
                             <a href="">Wi-Fi</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/telefonia.html">Telefonia</a>
+                        <a href="../HTML/telefonia.html">Telefonia</a>   <!--item do menu-->
 
                         <div class="drop-menu">
                             <a href="">PABX IP Virtual</a>
-                            <a href="">E1 / SIP Trunk</a>
+                            <a href="">E1 / SIP Trunk</a>       <!--Dropdown de itens do menu-->
                             <a href="">Números 0800/40xx</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>
+                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>  <!--item do menu-->
 
                         <div class="drop-menu">
                             <a href="">Ponto-a-Ponto</a>
-                            <a href="">MPLS</a>
-                            <a href="">FIbra Apagada e Dutos</a>
+                            <a href="">MPLS</a>     
+                            <a href="">FIbra Apagada e Dutos</a>        <!--Dropdown de itens do menu-->
                             <a href="">Co-locations</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/mob.html">Mobilidade</a>
+                        <a href="../HTML/mob.html">Mobilidade</a>    <!--item do menu-->
 
                         <div class="drop-menu">
-                            <a href="">Celular Empresarial</a>
+                            <a href="">Celular Empresarial</a>      <!--Dropdown de itens do menu-->
                             <a href="">MVNA/E</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/cpaas.html">CPaas</a>
+                        <a href="../HTML/cpaas.html">CPaas</a>   <!--item do menu-->
 
                         <div class="drop-menu">
                             <a href="../HTML/2fa.html">2FA</a>
                             <a href="../HTML/numero-mask.html">Número Máscara</a>
-                            <a href="../HTML/google-verified.html">Google Verified Calls</a>
+                            <a href="../HTML/google-verified.html">Google Verified Calls</a>        <!--Dropdown de itens do menu-->
                             <a href="../HTML/SMS.html">SMS Programável</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>
+                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>   <!--item do menu-->
 
                         <div class="drop-menu">
-                            <a href="">Outsourcing de Hardware</a>
+                            <a href="">Outsourcing de Hardware</a>      <!--Dropdown de itens do menu-->
                             <a href="../HTML/eventos.html">Eventos</a>
                         </div>
                     </li>
+
                 </ul>
-                <button id="btn-mobile-cpaas"><i class="fa-solid fa-bars"></i></button>
+                <button id="btn-mobile-cpaas" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>  <!--Botão de menu para celular-->
             </nav>
 
             <div class="btn-cpaas">
-                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i>Área do cliente</button></a>
+                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i><p>Área do cliente</p></button></a>
             </div>
         </header>
-        <section class="sobre_sms">
+        
+        <section class="sobre_sms">      <!--Seção sobre o SMS-->
             <h1>SMS PROGRAMÁVEL</h1>
             <hr>
             <h2>Conecte-se com seus clientes.</h2>
+            
             <div id="box_sms">
+                
                 <h2 id="sms_sub">
                     É muito provável que você já tenha recebido uma
                     mensagem de texto de uma empresa ou organização. <br/>
@@ -93,22 +103,27 @@
                     segurança, a velocidade e a confiabilidade que você
                     espera.
                 </h2>
+
                 <img src="../IMG/sms-img.png" alt="imagem de um celular na mão com sms">
             </div>
+
             <div id="contain_sms">
                 <h2>
                     SMS é a forma mais rápida, eficiente <br> e de baixo custo para se 
                     comunicar com seus clientes.
                 </h2>
-                <div id="vantagens_sms">
+                
+                <div id="vantagens_sms">         <!--Vantagens de usar SMS-->
                     <p><i class="fa-solid fa-caret-right"></i><strong>98%</strong><br> de taxa de abertura.</p>
                     <p><i class="fa-solid fa-caret-right"></i><strong>90%</strong><br> dos SMS são lidos ematé 3 minutos.</p>
                     <p><i class="fa-solid fa-caret-right"></i><strong>80%</strong><br> das pessoas interagem com SMS comerciais.</p>
                     <p><i class="fa-solid fa-caret-right"></i><strong>35x</strong><br> maior a probabilidade de um cliente abrir um SMS do que um e-mail. </p>
                 </div>
+
             </div>
         </section>
-        <section class="recursos_sms">
+
+        <section class="recursos_sms">       <!--Benefícios de SMS-->
             <h2>Benefícios</h2>
             <hr>
 
@@ -126,19 +141,20 @@
             </div>
 
         </section>
-        <section class="funcao_sms">
+
+        <section class="funcao_sms">         <!--Como funciona-->
             <h1>Como funciona</h1>
             <hr>
             <img src="../IMG/smi-img.png" alt="imagem de como funciona o google verified calls">
 
         </section>
 
-        <footer>
+        <footer>    <!--Rodapé da página-->
             <div id="footer_content">
                 <div id="footer_contacts">
                     <img src="../IMG/logotelecall.png" alt="logo telecall">
                     
-                    <div id="cpaas_socialmedia">
+                    <div id="cpaas_socialmedia"> <!--Parte das mídias no footer-->
                         <a href="https://www.instagram.com/telecallbr/" class="footer-link" id="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
                         <a href="https://www.facebook.com/TelecallBr" class="footer-link" id="facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -149,7 +165,7 @@
                     </div>
                 </div>
 
-                <ul class="cpaas-list">
+                <ul class="cpaas-list">     <!--Parte de colunas do footer 1-->
                     <li><a href="#">Institucional</a></li>
                     <li><a href="/HTML/home.html#slide_testimonial">Depoimentos</a></li>
                     <li><a href="#">Wholesale</a></li>
@@ -161,7 +177,7 @@
                     <li><a href="#">Política e Privacidade</a></li>
                 </ul>
 
-                <ul class="cpaas-list">
+                <ul class="cpaas-list">     <!--Parte de colunas do footer 2-->
                     <li><h3>Contratos</h3></li>
                     <li><a href="https://www.telecall.com/wp-content/uploads/2023/01/manual-dos-telefones.pdf"
                        target="_blank" >Manual dos Telefones</a>

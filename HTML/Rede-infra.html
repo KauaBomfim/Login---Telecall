@@ -12,73 +12,81 @@
         <title>Rede e infraestrutura - Telecall</title>
     </head>
     <body>
-        <header class="cabeçalho_home">
+        <header class="cabeçalho_cpaas">
             <a href="../HTML/home.html" id="logo"><img src="../IMG/icontelecall.png" alt="logo da telecall"/></a>
-            <nav id="menu">
-                <ul id="item-menu">
+            <nav id="menucp">
+                <ul id="item-menu-cpaas">
+
                     <li class="dropdown">
-                        <a href="../HTML/Internet.html">Internet</a>
+                        <a href="../HTML/Internet.html">Internet</a>    <!--item do menu-->
                         
                         <div class="drop-menu">
                             <a href="">Internet Dedicada</a>
-                            <a href="">Banda Larga</a>
+                            <a href="">Banda Larga</a>          <!--Dropdown de itens do menu-->
                             <a href="">Wi-Fi</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/telefonia.html">Telefonia</a>
+                        <a href="../HTML/telefonia.html">Telefonia</a>   <!--item do menu-->
 
                         <div class="drop-menu">
                             <a href="">PABX IP Virtual</a>
-                            <a href="">E1 / SIP Trunk</a>
+                            <a href="">E1 / SIP Trunk</a>       <!--Dropdown de itens do menu-->
                             <a href="">Números 0800/40xx</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>
+                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>  <!--item do menu-->
 
                         <div class="drop-menu">
                             <a href="">Ponto-a-Ponto</a>
-                            <a href="">MPLS</a>
-                            <a href="">FIbra Apagada e Dutos</a>
+                            <a href="">MPLS</a>     
+                            <a href="">FIbra Apagada e Dutos</a>        <!--Dropdown de itens do menu-->
                             <a href="">Co-locations</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/mob.html">Mobilidade</a>
+                        <a href="../HTML/mob.html">Mobilidade</a>    <!--item do menu-->
 
                         <div class="drop-menu">
-                            <a href="">Celular Empresarial</a>
+                            <a href="">Celular Empresarial</a>      <!--Dropdown de itens do menu-->
                             <a href="">MVNA/E</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/cpaas.html">CPaas</a>
+                        <a href="../HTML/cpaas.html">CPaas</a>   <!--item do menu-->
 
                         <div class="drop-menu">
                             <a href="../HTML/2fa.html">2FA</a>
                             <a href="../HTML/numero-mask.html">Número Máscara</a>
-                            <a href="../HTML/google-verified.html">Google Verified Calls</a>
+                            <a href="../HTML/google-verified.html">Google Verified Calls</a>        <!--Dropdown de itens do menu-->
                             <a href="../HTML/SMS.html">SMS Programável</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>
+                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>   <!--item do menu-->
 
                         <div class="drop-menu">
-                            <a href="">Outsourcing de Hardware</a>
+                            <a href="">Outsourcing de Hardware</a>      <!--Dropdown de itens do menu-->
                             <a href="../HTML/eventos.html">Eventos</a>
                         </div>
                     </li>
+
                 </ul>
-                <button id="btn-mobile" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                <button id="btn-mobile-cpaas" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>  <!--Botão de menu para celular-->
             </nav>
 
-            <div class="btn-user">
-                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i>Área do cliente</button></a>
+            <div class="btn-cpaas">
+                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i><p>Área do cliente</p></button></a>
             </div>
         </header>
-        <section class="header_rede">
+
+        <section class="header_rede">      <!--Apresentação Rede-->
             <div id="title_rede">
                 <img src="../IMG/Icone-rede-infra.png" alt="ícone de servidor">
                 <h1>Rede e Infraestrutura</h1>
@@ -86,43 +94,49 @@
             <p>Soluções de conectividade sob <br> medida parar sua empresa.</p>
             <button>contrate aqui</button>
         </section>
-        <section class="content_rede">
+
+        <section class="content_rede">      <!--Seção serviços rede-->
             <h2>Serviços de Rede e Infraestrutura</h2>
             <hr>
             
-            <div id="content_rede">
+            <div id="content_rede">     <!--Box 1-->
                 <div class="box_rede">
                     <i class="fa-solid fa-circle-nodes"></i>
                     <h3>Ponto-a-Ponto</h3>
                     <p>Acesso dedicado para ligação entre dois pontos</p>
                     <button>Saiba Mais</button>
                 </div>
-                <div class="box_rede">
+
+                <div class="box_rede">      <!--Box 2-->
                     <i class="fa-solid fa-cloud-arrow-down"></i>
                     <h3>MPLS</h3>
                     <p>Formação de rede com protocolo MPLS.</p>
                     <button>Saiba Mais</button>
                 </div>
-                <div class="box_rede">
+
+                <div class="box_rede">      <!--Box 3-->
                     <i class="fa-solid fa-tower-broadcast"></i>
                     <h3>FIbra Apagada e Dutos</h3>
                     <p>Locação privada de fibra apagada e dutos.</p>
                     <button>Saiba Mais</button>
                 </div>
-                <div class="box_rede">
+
+                <div class="box_rede">      <!--Box 4-->
                     <i class="fa-solid fa-server"></i>
                     <h3>Co-locations</h3>
                     <p>Locação de espaço em rack no Data Center da Telecall.</p>
                     <button>Saiba Mais</button>
                 </div>
+
             </div>
         </section>
-        <footer>
+
+        <footer>    <!--Rodapé da página-->
             <div id="footer_content">
                 <div id="footer_contacts">
-                    <a href="../HTML/home.html"><img src="../IMG/logotelecall.png" alt="logo telecall"></a>
+                    <img src="../IMG/logotelecall.png" alt="logo telecall">
                     
-                    <div id="footer_socialmedia">
+                    <div id="cpaas_socialmedia"> <!--Parte das mídias no footer-->
                         <a href="https://www.instagram.com/telecallbr/" class="footer-link" id="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
                         <a href="https://www.facebook.com/TelecallBr" class="footer-link" id="facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -133,9 +147,9 @@
                     </div>
                 </div>
 
-                <ul class="footer-list">
+                <ul class="cpaas-list">     <!--Parte de colunas do footer 1-->
                     <li><a href="#">Institucional</a></li>
-                    <li><a href="../HTML/home.html#slide_testimonial">Depoimentos</a></li>
+                    <li><a href="/HTML/home.html#slide_testimonial">Depoimentos</a></li>
                     <li><a href="#">Wholesale</a></li>
                     <li><a href="#">empresas</a></li>
                     <li><a href="https://carreirastelecall.solides.jobs/" target="_blank">Carreiras</a></li>
@@ -145,7 +159,7 @@
                     <li><a href="#">Política e Privacidade</a></li>
                 </ul>
 
-                <ul class="footer-list">
+                <ul class="cpaas-list">     <!--Parte de colunas do footer 2-->
                     <li><h3>Contratos</h3></li>
                     <li><a href="https://www.telecall.com/wp-content/uploads/2023/01/manual-dos-telefones.pdf"
                        target="_blank" >Manual dos Telefones</a>

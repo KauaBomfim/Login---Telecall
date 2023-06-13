@@ -15,71 +15,79 @@
             <a href="../HTML/home.html" id="logo"><img src="../IMG/icontelecall.png" alt="logo da telecall"/></a>
             <nav id="menucp">
                 <ul id="item-menu-cpaas">
+
                     <li class="dropdown">
-                        <a href="../HTML/Internet.html">Internet</a>
+                        <a href="../HTML/Internet.html">Internet</a>    <!--item do menu-->
                         
                         <div class="drop-menu">
                             <a href="">Internet Dedicada</a>
-                            <a href="">Banda Larga</a>
+                            <a href="">Banda Larga</a>          <!--Dropdown de itens do menu-->
                             <a href="">Wi-Fi</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/telefonia.html">Telefonia</a>
+                        <a href="../HTML/telefonia.html">Telefonia</a>   <!--item do menu-->
 
                         <div class="drop-menu">
                             <a href="">PABX IP Virtual</a>
-                            <a href="">E1 / SIP Trunk</a>
+                            <a href="">E1 / SIP Trunk</a>       <!--Dropdown de itens do menu-->
                             <a href="">Números 0800/40xx</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>
+                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>  <!--item do menu-->
 
                         <div class="drop-menu">
                             <a href="">Ponto-a-Ponto</a>
-                            <a href="">MPLS</a>
-                            <a href="">FIbra Apagada e Dutos</a>
+                            <a href="">MPLS</a>     
+                            <a href="">FIbra Apagada e Dutos</a>        <!--Dropdown de itens do menu-->
                             <a href="">Co-locations</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/mob.html">Mobilidade</a>
+                        <a href="../HTML/mob.html">Mobilidade</a>    <!--item do menu-->
 
                         <div class="drop-menu">
-                            <a href="">Celular Empresarial</a>
+                            <a href="">Celular Empresarial</a>      <!--Dropdown de itens do menu-->
                             <a href="">MVNA/E</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/cpaas.html">CPaas</a>
+                        <a href="../HTML/cpaas.html">CPaas</a>   <!--item do menu-->
 
                         <div class="drop-menu">
                             <a href="../HTML/2fa.html">2FA</a>
                             <a href="../HTML/numero-mask.html">Número Máscara</a>
-                            <a href="../HTML/google-verified.html">Google Verified Calls</a>
+                            <a href="../HTML/google-verified.html">Google Verified Calls</a>        <!--Dropdown de itens do menu-->
                             <a href="../HTML/SMS.html">SMS Programável</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>
+                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>   <!--item do menu-->
 
                         <div class="drop-menu">
-                            <a href="">Outsourcing de Hardware</a>
+                            <a href="">Outsourcing de Hardware</a>      <!--Dropdown de itens do menu-->
                             <a href="../HTML/eventos.html">Eventos</a>
                         </div>
                     </li>
+
                 </ul>
-                <button id="btn-mobile-cpaas"><i class="fa-solid fa-bars"></i></button>
+                <button id="btn-mobile-cpaas" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>  <!--Botão de menu para celular-->
             </nav>
 
             <div class="btn-cpaas">
-                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i>Área do cliente</button></a>
+                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i><p>Área do cliente</p></button></a>
             </div>
         </header>
         
-        <main id="main_cpaas">
-            <section class="header_cpaas">
+        <main id="main_cpaas">  <!--Todos os conteúdos da página cpaas-->
+
+            <section class="header_cpaas">  <!--Seção da parte de apresentação da página-->
                 <div id="title_cpaas">
                     <h1>Cpaas</h1>
                 </div>
@@ -87,7 +95,7 @@
                 <button>contrate aqui</button>
             </section>
 
-            <section class="sobre_cpaas">
+            <section class="sobre_cpaas"> <!--Seção explicando sobre a cpaas-->
                 <h1>Sobre a CPaaS</h1>
                 <hr>
                 <h2 id="h2_cpaas">Communications Platform as a Service</h2>
@@ -109,112 +117,126 @@
                 </div>
             </section>
 
-            <section class="digital_cpaas">
+            <section class="digital_cpaas">     <!--Seção da parte de informações estátisticas da cpaas-->
                <div id="info_digital">
                    <h1>CPaaS e a Transformação Digital</h1>
                    <hr>
+
                    <p><i class="fa-solid fa-caret-right"></i>Expectativa de crescimento estimado de 
-                    <strong>$ 8,2 bilhões</strong> em 2021.
+                        <strong>$ 8,2 bilhões</strong> em 2021.
                     </p>
+
                     <p><i class="fa-solid fa-caret-right"></i><strong>85%</strong> dos profissionais se 
                         conectam de maneira diferente com colegas e clientes do que faziam há apenas 5 anos.
                     </p>
+
                     <p><i class="fa-solid fa-caret-right"></i>As receitas de CPaaS 
                         estão crescendo mais de <strong>40%</strong> ao ano.
                     </p>
+
                     <p><i class="fa-solid fa-caret-right"></i><strong>CPaaS</strong> já ultrapassou o mercado de 
                         <strong>UCaaS</strong> (Unified Communication as a Service).
                     </p>
+
                     <p><i class="fa-solid fa-caret-right"></i>Marcas que estão em <strong>múltiplos canais</strong>
-                            melhoram a experiência do usuário e aumentam seus resultados.
+                        melhoram a experiência do usuário e aumentam seus resultados.
                     </p>
-               </div>
+                </div>
                <img src="../IMG/imagem-digital.png" alt="Imagens ícones digital">
             </section>
-            <section class="uso_cpaas">
+
+            <section class="uso_cpaas">     <!--Seção sobre o que a cpaas te oferece-->
                 <h2>Usos da CPaas</h2>
                 <hr>
             
                 <div id="contain_uso">
-                    <div class="box_uso">
+                    <div class="box_uso">   <!--Box 1 sobre uso cpaas-->
                         <i class="fa-solid fa-box"></i>
                         <h3>Logística</h3>
-                            <p>Acesso seguro com 2FA.</p>
-                            <p>
-                                Uso de números mascarados
-                                para proteção de funcionário
-                                e cliente.
-                            </p>
-                            <p>
-                                Mantenha o cliente
-                                informado sobre entrega e
-                                serviços.
-                            </p>
-                            <p>
-                                Verified calling para
-                                confirmação de entregas.
-                            </p>
+
+                        <p>Acesso seguro com 2FA.</p>
+                        <p>
+                            Uso de números mascarados
+                            para proteção de funcionário
+                            e cliente.
+                        </p>
+                        <p>
+                            Mantenha o cliente
+                            informado sobre entrega e
+                            serviços.
+                        </p>
+                        <p>
+                            Verified calling para
+                            confirmação de entregas.
+                        </p>
                     </div>
-                    <div class="box_uso">
+
+                    <div class="box_uso">   <!--Box 2 sobre uso cpaas-->
                         <i class="fa-solid fa-cart-shopping"></i>
                         <h3>Varejo</h3>
-                            <p>Compra segura com 2FA.</p>
-                            <p>
-                                Avisos sobre compras e
-                                entregas.
-                            </p>
-                            <p>
-                                Upsell com novas ofertas e
-                                vantagens via SMS ou
-                                Verified Calling.
-                            </p>
+
+                        <p>Compra segura com 2FA.</p>
+                        <p>
+                            Avisos sobre compras e
+                            entregas.
+                        </p>
+                        <p>
+                            Upsell com novas ofertas e
+                            vantagens via SMS ou
+                            Verified Calling.
+                        </p>
                     </div>
-                    <div class="box_uso">
+
+                    <div class="box_uso">   <!--Box 3 sobre uso cpaas-->
                         <i class="fa-solid fa-headset"></i>
                         <h3>Call Center</h3>
-                            <p>
-                                Melhore taxas de abertura
-                                utilizando alertas SMS para
-                                confirmações.
-                            </p>
-                            <p>
-                                Economia de números com o
-                                uso de um único número
-                                máscara por todos os agentes.
-                            </p>
-                            <p>
-                                Verified Calling para
-                                confirmação de
-                                agendamentos.
-                            </p>
+
+                        <p>
+                            Melhore taxas de abertura
+                            utilizando alertas SMS para
+                            confirmações.
+                        </p>
+                        <p>
+                            Economia de números com o
+                            uso de um único número
+                            máscara por todos os agentes.
+                        </p>
+                        <p>
+                            Verified Calling para
+                            confirmação de
+                            agendamentos.
+                        </p>
                     </div>
-                    <div class="box_uso">
+
+                    <div class="box_uso">   <!--Box 4 sobre uso cpaas-->
                         <i class="fa-solid fa-heart-pulse"></i>
                         <h3>Saúde</h3>
-                            <p>Acesso seguro com 2FA.</p>
-                            <p>
-                                Melhore o agendamento e
-                                reduza faltas com lembretes por
-                                SMS.
-                            </p>
-                            <p>
-                                Tokens de autorização para
-                                procedimentos com 2FA.
-                            </p>
-                            <p>
-                                Verified Calling para avisos de
-                                resultados e agendamentos.
-                            </p>    
+
+                        <p>Acesso seguro com 2FA.</p>
+                        <p>
+                            Melhore o agendamento e
+                            reduza faltas com lembretes por
+                            SMS.
+                        </p>
+                        <p>
+                            Tokens de autorização para
+                            procedimentos com 2FA.
+                        </p>
+                        <p>
+                            Verified Calling para avisos de
+                            resultados e agendamentos.
+                        </p>    
                     </div>
                 </div>
             </section>
             
-            <section class="solucoes_cpaas">
+            <section class="solucoes_cpaas">    <!--Seção com as ferramentas que a cpaas te oferece-->
                 <h2>Soluções CPaaS</h2>
                 <hr>
             
                 <div id="solucoes_cpaas">
-                    <div class="box_solucoes">
+
+                    <div class="box_solucoes">  <!--Box 1 sobre o recurso cpaas-->
                         <i class="fa-solid fa-lock"></i>
                         <h3>2FA</h3>
                         <p>
@@ -223,7 +245,8 @@
                         </p>
                         <a href="../HTML/2fa.html"><button>Saiba Mais</button></a>
                     </div>
-                    <div class="box_solucoes">
+
+                    <div class="box_solucoes">  <!--Box 2 sobre o recurso cpaas-->
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <h3>Número Máscara</h3>
                         <p>
@@ -232,7 +255,8 @@
                         </p>
                         <a href="../HTML/numero-mask.html"><button>Saiba Mais</button></a>
                     </div>
-                    <div class="box_solucoes">
+
+                    <div class="box_solucoes">  <!--Box 3 sobre o recurso cpaas-->
                         <i class="fa-solid fa-circle-check"></i>
                         <h3>Google Verified Calls</h3>
                         <p>
@@ -242,7 +266,8 @@
                         </p>
                         <a href="../HTML/google-verified.html"><button>Saiba Mais</button></a>
                     </div>
-                    <div class="box_solucoes">
+
+                    <div class="box_solucoes">  <!--Box 4 sobre o recurso cpaas-->
                         <i class="fa-regular fa-message"></i>
                         <h3>SMS Programável</h3>
                         <p>
@@ -250,31 +275,33 @@
                             as informações que o seu cliente precisa</p>
                         <a href="../HTML/SMS.html"><button>Saiba Mais</button></a>
                     </div>
+
                 </div>
             </section>
-            <section class="usuarios_cpaas">
+
+            <section class="usuarios_cpaas"> <!--Seção de quem usa cpaas-->
                 <h1>Quem Usa?</h1>
                 <hr>
                 <img src="../IMG/usuarios-cpaas-img.png" alt="imagem de empresas que usam cpaas da telecall">
-    
             </section>
-            <footer>
+
+            <footer>    <!--Rodapé da página-->
                 <div id="footer_content">
                     <div id="footer_contacts">
                         <img src="../IMG/logotelecall.png" alt="logo telecall">
                         
-                        <div id="cpaas_socialmedia">
+                        <div id="cpaas_socialmedia"> <!--Parte das mídias no footer-->
                             <a href="https://www.instagram.com/telecallbr/" class="footer-link" id="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-
+    
                             <a href="https://www.facebook.com/TelecallBr" class="footer-link" id="facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-
+    
                             <a href="https://www.linkedin.com/company/telecall/" class="footer-link" id="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-
+    
                             <a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" class="footer-link" id="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
-
-                    <ul class="cpaas-list">
+    
+                    <ul class="cpaas-list">     <!--Parte de colunas do footer 1-->
                         <li><a href="#">Institucional</a></li>
                         <li><a href="/HTML/home.html#slide_testimonial">Depoimentos</a></li>
                         <li><a href="#">Wholesale</a></li>
@@ -285,8 +312,8 @@
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Política e Privacidade</a></li>
                     </ul>
-
-                    <ul class="cpaas-list">
+    
+                    <ul class="cpaas-list">     <!--Parte de colunas do footer 2-->
                         <li><h3>Contratos</h3></li>
                         <li><a href="https://www.telecall.com/wp-content/uploads/2023/01/manual-dos-telefones.pdf"
                            target="_blank" >Manual dos Telefones</a>
@@ -308,7 +335,7 @@
                         </li>
                     </ul>
                 </div>
-
+    
                 <div id="footer_copyright">
                     <p>Copyright &#169 2018 Telecall. Todos os direitos reservados.</p>
                 </div>

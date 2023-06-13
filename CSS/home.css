@@ -12,7 +12,7 @@
     --cor6: rgb(1,112,185);    /*Cor detalhes*/
     --cor7: #004A7A;          /*Cor do texto*/
 
-    --cpaas-cor1: #00a7da;   
+    --cpaas-cor1: rgb(0, 167, 218);   
     --cpaas-cor2: #0078da;       /*Cores cpaas*/
 }
 
@@ -1956,6 +1956,10 @@ footer {
     width: 50%;
 }
 
+.sobre_2fa img {
+    width: 500px;
+}
+
 #text_2fa {
     display: flex;
     align-items: center;
@@ -2247,6 +2251,10 @@ footer {
     align-items: center;
 }
 
+#contain_gvc img {
+    width: 600px;
+}
+
 .recursos_gvc {
     font-family: 'Sarala', sans-serif;
     margin: 50px 0px 0px 100px;
@@ -2511,8 +2519,22 @@ footer {
         display: none;
     }
     
+}
+
+@media screen and (max-width: 1024px) {
     #btn-cliente {
-        height: 70px;
+        height: 30px;
+        width: 10px;
+    }
+
+    #btn-cliente p {
+        display: none;
+    }
+
+    #btn-cliente i {
+        position: absolute;
+        left: 10px;
+        top: 10px;
     }
 }
 
@@ -2739,7 +2761,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
     #content_rede {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

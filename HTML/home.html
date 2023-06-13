@@ -14,135 +14,146 @@
         <title>Site Oficial - Telecall</title>
     </head>
     <body>
-        <header class="cabeçalho_home">
-            <a href="../HTML/home.html"><img src="../IMG/icontelecall.png" alt="logo da telecall" id="logo"/></a>
+        <header class="cabeçalho_home">     <!--Menu Telecall-->
+            <a href="../HTML/home.html" id="logo"><img src="../IMG/icontelecall.png" alt="logo da telecall"/></a>
             <nav id="menu">
-                <ul id="item-menu">
-                    <li class="dropdown">
-                        <a href="../HTML/Internet.html">Internet</a>
+                <ul id="item-menu">      <!--Itens do menu telecall-->
+
+                    <li class="dropdown">  
+                        <a href="../HTML/Internet.html">Internet</a>     <!--Item principal-->
                         
                         <div class="drop-menu">
-                            <a href="#">Internet Dedicada</a>
-                            <a href="#">Banda Larga</a>
-                            <a href="#">Wi-Fi</a>
+                            <a href="">Internet Dedicada</a>
+                            <a href="">Banda Larga</a>          <!--Itens dropdown-->
+                            <a href="">Wi-Fi</a>
                         </div>
                     </li>
-                    <li class="dropdown" id="drop-menu">
-                        <a href="../HTML/telefonia.html">Telefonia</a>
+
+                    <li class="dropdown">
+                        <a href="../HTML/telefonia.html">Telefonia</a>      <!--Item principal-->
 
                         <div class="drop-menu">
-                            <a href="#">PABX IP Virtual</a>
-                            <a href="#">E1 / SIP Trunk</a>
-                            <a href="#">Números 0800/40xx</a>
+                            <a href="">PABX IP Virtual</a>
+                            <a href="">E1 / SIP Trunk</a>       <!--Itens dropdown-->
+                            <a href="">Números 0800/40xx</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>
+                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>     <!--Item principal-->
 
                         <div class="drop-menu">
-                            <a href="#">Ponto-a-Ponto</a>
-                            <a href="#">MPLS</a>
-                            <a href="#">FIbra Apagada e Dutos</a>
-                            <a href="#">Co-locations</a>
+                            <a href="">Ponto-a-Ponto</a>
+                            <a href="">MPLS</a>                 <!--Itens dropdown-->
+                            <a href="">FIbra Apagada e Dutos</a>
+                            <a href="">Co-locations</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/mob.html">Mobilidade</a>
+                        <a href="../HTML/mob.html">Mobilidade</a>       <!--Item principal-->
 
                         <div class="drop-menu">
-                            <a href="#">Celular Empresarial</a>
-                            <a href="#">MVNA/E</a>
+                            <a href="">Celular Empresarial</a>      <!--Itens dropdown-->
+                            <a href="">MVNA/E</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/cpaas.html">CPaas</a>
+                        <a href="../HTML/cpaas.html">CPaas</a>      <!--Item principal-->
 
                         <div class="drop-menu">
                             <a href="../HTML/2fa.html">2FA</a>
-                            <a href="../HTML/numero-mask.html">Número Máscara</a>
+                            <a href="../HTML/numero-mask.html">Número Máscara</a>       <!--Itens dropdown-->
                             <a href="../HTML/google-verified.html">Google Verified Calls</a>
                             <a href="../HTML/SMS.html">SMS Programável</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>
+                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>      <!--Item principal-->
 
                         <div class="drop-menu">
                             <a href="">Outsourcing de Hardware</a>
-                            <a href="../HTML/eventos.html">Eventos</a>
+                            <a href="../HTML/eventos.html">Eventos</a>      <!--Itens dropdown-->
                         </div>
                     </li>
+
                 </ul>
-                <button id="btn-mobile"><i class="fa-solid fa-bars"></i></button>
+                <button id="btn-mobile" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>        <!--Butão mobile telecall-->
             </nav>
 
-            <div class="btn-user">
-                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i>Área do cliente</button></a>
+            <div class="btn-user">      <!--Butão da área do cliente-->
+                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i><p>Área do cliente</p></button></a>
             </div>
+
         </header>
-        <main class="conteudo_principal">
-            <section class="slider">
+
+        <main class="conteudo_principal">       
+            <section class="slider">    <!--Slide principal-->
+                
                 <div class="slides">
                     <input type="radio" name="radio_btn" id="radio1">
-                    <input type="radio" name="radio_btn" id="radio2">
+                    <input type="radio" name="radio_btn" id="radio2">       <!--Butões radio com funções do slide-->
                     <input type="radio" name="radio_btn" id="radio3">
                     <input type="radio" name="radio_btn" id="radio4">
                 
                 
                     <div class="slide primeiro">
-                        <img src="../IMG/PABX2.png" alt="imagem telecall">
+                        <img src="../IMG/PABX2.png" alt="imagem telecall">  <!--Slide 1-->
                     </div>
                     
                     <div class="slide">
-                        <img src="../IMG/banner-cel-empresarial-telecall-min.png" alt="imagem telecall">
+                        <img src="../IMG/banner-cel-empresarial-telecall-min.png" alt="imagem telecall">    <!--Slide 2-->
                     </div>
                     
                     <div class="slide">
-                        <img src="../IMG/CEL-EMPRESARIAL-2-1.png" alt="imagem telecall">
+                        <img src="../IMG/CEL-EMPRESARIAL-2-1.png" alt="imagem telecall">    <!--Slide 3-->
                     </div>
                     
                     <div class="slide">
-                        <img src="../IMG/INTERNET-DEDICADA.png" alt="imagem telecall">
-                    </div>
+                        <img src="../IMG/INTERNET-DEDICADA.png" alt="imagem telecall">  <!--Slide 4-->
+                    </div>  
 
                     <div class="nav_auto">
                         <div class="auto_btn1"></div>
-                        <div class="auto_btn2"></div>
+                        <div class="auto_btn2"></div>       <!--Função temporizada-->
                         <div class="auto_btn3"></div>
                         <div class="auto_btn4"></div>
                     </div>
 
                     <div class="nav_manual">
                         <label for="radio1" class="manual_btn"></label>
-                        <label for="radio2" class="manual_btn"></label>
+                        <label for="radio2" class="manual_btn"></label>     <!--Função manual de click-->
                         <label for="radio3" class="manual_btn"></label>
                         <label for="radio4" class="manual_btn"></label>
                     </div>
 
                 </div>
             </section>
-            <section class="serviços_telecall">
+
+            <section class="serviços_telecall">     <!--Serviços da telecall -->
                 <h1>Soluções inteligentes para sua empresa</h1>
                     
                 <div class="contain_serviços" name="internet">
                     <div class="contain_box">
                         <i class="fa-solid fa-globe"></i>
                         <h2>Internet</h2>
-                        <p>Solução de internet em fibra e alta qualidade e disponibilidade.</p>
+                        <p>Solução de internet em fibra e alta qualidade e disponibilidade.</p>     <!--Box 1-->
                         <a href="Internet.html"><button>Saiba mais</button></a>
                     </div>
                     
                     <div class="contain_box" name="Telefonia">
                         <i class="fa-solid fa-network-wired"></i>
                         <h2>Telefonia</h2>
-                        <p>Solução inteligente de PABX IP na núvem para sua telefonia fixa.</p>
+                        <p>Solução inteligente de PABX IP na núvem para sua telefonia fixa.</p>     <!--Box 2-->
                         <a href="telefonia.html"><button>Saiba mais</button></a>
                     </div>
                     
                     <div class="contain_box" name="Mobilidade">
                         <i class="fa-solid fa-mobile"></i>
                         <h2>Mobilidade</h2>
-                        <p>Monte planos de celular personalizados para a sua empresa e pague apenas pelo o que precisa.</p>
+                        <p>Monte planos de celular personalizados para a sua empresa e pague apenas pelo o que precisa.</p>     <!--Box 3-->
                         <a href="mob.html"><button>Saiba mais</button></a>
                     
                     </div>
@@ -150,13 +161,14 @@
                     <div class="contain_box" name="cpaas">
                         <i class="fa-solid fa-cloud"></i>
                         <h2>CPaaS</h2>
-                        <p>Solução de software de comunicação que atua como uma base sobre a qual desenvolvedores podem integrar.</p>
+                        <p>Solução de software de comunicação que atua como uma base sobre a qual desenvolvedores podem integrar.</p>       <!--Box 4-->
                         <a href="cpaas.html"><button>Saiba mais</button></a>
                     </div>
 
                 </div>
             </section>
-            <section class="planos_mob">
+
+            <section class="planos_mob">        <!--Seção de planos de celulares-->
                 <h1>Conheça nossos planos de mobilidade</h1>
                 
                 <div class="contain_plano">
@@ -170,10 +182,12 @@
                     </div>
                 </div>
             </section>
-            <section class="eventos">
+
+            <section class="eventos">       <!--Seção de eventos-->
                 <h1>Eventos</h1>
                 <div class="contain_evento">
-                    <div class="box_evento">
+
+                    <div class="box_evento">        <!--Evento 1-->
                         <div class="event-title">
                             <h2>ITW international Telecoms Week 2023</h2>
                             <h3>14 a 17 de Maio</h3>
@@ -182,7 +196,7 @@
                             <img src="../IMG/ITW-14-a-17.05.png" alt="imagem evento ITW"></a>
                     </div>
                     
-                    <div class="box_evento">
+                    <div class="box_evento">         <!--Evento 2-->
                         <div class="event-title">
                             <h2>Abrint Encontro Nacional 2023</h2>
                             <h3>24 a 25 de Maio</h3>
@@ -190,7 +204,7 @@
                         <a href="https://www.eventonacional.abrint.com.br/" target="_blank"><img src="../IMG/Abrint-24-a-26.05.png" alt="imagem evento Abrint"></a>
                     </div>
 
-                    <div class="box_evento">
+                    <div class="box_evento">         <!--Evento 3-->
                         <div class="event-title">
                             <h2>GCCM Rio de Jnaeiro</h2>
                             <h3>30 a 31 de Agosto</h3>
@@ -198,8 +212,10 @@
                         <a href="https://carriercommunity.com/#/cc-events/174/media" target="_blank"><img src="../IMG/thumb-evento-11.png" alt="imagem evento GCCM"></a>
                     </div>
                 </div>
+
             </section>
-            <section class="slide-feed" id="slide_testimonial">
+
+            <section class="slide-feed" id="slide_testimonial">      <!--Slide de depoimentos-->
                 <h1>Nossos Clientes Que Acreditam Nos Nossos Serviços</h1>
                 <div class="testimonial mySwiper">
                     <div class="testi-content swiper-wrapper">
@@ -393,10 +409,11 @@
                     <div class="swiper-button-prev nav-btn"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+
             </section>
 
             <section class="rede_telecall">
-                <h1>Presença em todo Rio de Janeiro</h1>
+                <h1>Presença em todo Rio de Janeiro</h1>         <!--Seção de rede no rio da telecall-->
             </section>
 
             <div class="box-rede">
@@ -406,7 +423,7 @@
                 target="_blank"><button>Saiba Mais</button></a>
             </div>
 
-            <section class="sobre_telecall">
+            <section class="sobre_telecall">         <!--Sobre a empresa telecall-->
                 <h1>Quem Somos</h1>
                 <div class="contain_sobre">
                     <p>
@@ -419,25 +436,26 @@
                 </div>
             </section>
 
-            <footer>
+            <footer>         <!--Rodapé da página-->
                 <div id="footer_content">
+    
                     <div id="footer_contacts">
-                        <a href="#"><img src="../IMG/logotelecall.png" alt="logo telecall"></a>
+                        <a href="../HTML/home.html"><img src="../IMG/logotelecall.png" alt="logo telecall"></a>
                         
-                        <div id="footer_socialmedia">
+                        <div id="footer_socialmedia">   <!--Parte das mídias no footer-->
                             <a href="https://www.instagram.com/telecallbr/" class="footer-link" id="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-
+    
                             <a href="https://www.facebook.com/TelecallBr" class="footer-link" id="facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-
+    
                             <a href="https://www.linkedin.com/company/telecall/" class="footer-link" id="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-
+    
                             <a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" class="footer-link" id="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
-
-                    <ul class="footer-list">
+    
+                    <ul class="footer-list">    <!--Parte de colunas do footer 1-->
                         <li><a href="#">Institucional</a></li>
-                        <li><a href="#slide_testimonial">Depoimentos</a></li>
+                        <li><a href="../HTML/home.html#slide_testimonial">Depoimentos</a></li>
                         <li><a href="#">Wholesale</a></li>
                         <li><a href="#">empresas</a></li>
                         <li><a href="https://carreirastelecall.solides.jobs/" target="_blank">Carreiras</a></li>
@@ -446,8 +464,8 @@
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Política e Privacidade</a></li>
                     </ul>
-
-                    <ul class="footer-list">
+    
+                    <ul class="footer-list">     <!--Parte de colunas do footer 2-->
                         <li><h3>Contratos</h3></li>
                         <li><a href="https://www.telecall.com/wp-content/uploads/2023/01/manual-dos-telefones.pdf"
                            target="_blank" >Manual dos Telefones</a>
@@ -469,7 +487,7 @@
                         </li>
                     </ul>
                 </div>
-
+    
                 <div id="footer_copyright">
                     <p>Copyright &#169 2018 Telecall. Todos os direitos reservados.</p>
                 </div>

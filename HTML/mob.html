@@ -12,73 +12,82 @@
         <title>Mobilidade - Telecall</title>
     </head>
     <body>
-        <header class="cabeçalho_home">
+        <header class="cabeçalho_home">     <!--Menu Telecall-->
             <a href="../HTML/home.html" id="logo"><img src="../IMG/icontelecall.png" alt="logo da telecall"/></a>
             <nav id="menu">
-                <ul id="item-menu">
-                    <li class="dropdown">
-                        <a href="../HTML/Internet.html">Internet</a>
+                <ul id="item-menu">      <!--Itens do menu telecall-->
+
+                    <li class="dropdown">  
+                        <a href="../HTML/Internet.html">Internet</a>     <!--Item principal-->
                         
                         <div class="drop-menu">
                             <a href="">Internet Dedicada</a>
-                            <a href="">Banda Larga</a>
+                            <a href="">Banda Larga</a>          <!--Itens dropdown-->
                             <a href="">Wi-Fi</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/telefonia.html">Telefonia</a>
+                        <a href="../HTML/telefonia.html">Telefonia</a>      <!--Item principal-->
 
                         <div class="drop-menu">
                             <a href="">PABX IP Virtual</a>
-                            <a href="">E1 / SIP Trunk</a>
+                            <a href="">E1 / SIP Trunk</a>       <!--Itens dropdown-->
                             <a href="">Números 0800/40xx</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>
+                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>     <!--Item principal-->
 
                         <div class="drop-menu">
                             <a href="">Ponto-a-Ponto</a>
-                            <a href="">MPLS</a>
+                            <a href="">MPLS</a>                 <!--Itens dropdown-->
                             <a href="">FIbra Apagada e Dutos</a>
                             <a href="">Co-locations</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/mob.html">Mobilidade</a>
+                        <a href="../HTML/mob.html">Mobilidade</a>       <!--Item principal-->
 
                         <div class="drop-menu">
-                            <a href="">Celular Empresarial</a>
+                            <a href="">Celular Empresarial</a>      <!--Itens dropdown-->
                             <a href="">MVNA/E</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/cpaas.html">CPaas</a>
+                        <a href="../HTML/cpaas.html">CPaas</a>      <!--Item principal-->
 
                         <div class="drop-menu">
                             <a href="../HTML/2fa.html">2FA</a>
-                            <a href="../HTML/numero-mask.html">Número Máscara</a>
+                            <a href="../HTML/numero-mask.html">Número Máscara</a>       <!--Itens dropdown-->
                             <a href="../HTML/google-verified.html">Google Verified Calls</a>
                             <a href="../HTML/SMS.html">SMS Programável</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
-                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>
+                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>      <!--Item principal-->
 
                         <div class="drop-menu">
                             <a href="">Outsourcing de Hardware</a>
-                            <a href="../HTML/eventos.html">Eventos</a>
+                            <a href="../HTML/eventos.html">Eventos</a>      <!--Itens dropdown-->
                         </div>
                     </li>
+
                 </ul>
-                <button id="btn-mobile" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+                <button id="btn-mobile" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>        <!--Butão mobile telecall-->
             </nav>
 
-            <div class="btn-user">
-                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i>Área do cliente</button></a>
+            <div class="btn-user">      <!--Butão da área do cliente-->
+                <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i><p>Área do cliente</p></button></a>
             </div>
+
         </header>
-        <section class="header_mob">
+
+        <section class="header_mob">         <!--Apresentação mobilidade-->
             <div id="title_mob">
                 <img src="../IMG/logo-mob.png" alt="logo de celular">
                 <h1>Mobilidade</h1>
@@ -86,31 +95,37 @@
             <p>As melhores soluções em <br> mobilidade para sua empresa.</p>
             <button>contrate aqui</button>
         </section>
-        <section class="content_mob">
+
+        <section class="content_mob">        <!--Serviços mobilidade-->
             <h2>Serviços de Mobilidade</h2>
             <hr>
             
             <div id="content_box">
+
                 <div class="box_mob">
-                    <i class="fa-solid fa-mobile"></i>
+                    <i class="fa-solid fa-mobile"></i>      
                     <h3>Celular Empresarial</h3>
-                    <p>Monte planos de celular personalizados para a sua empresa.</p>
+                    <p>Monte planos de celular personalizados para a sua empresa.</p>        <!--Box 1-->
                     <button>Saiba Mais</button>
                 </div>
+
                 <div class="box_mob">
                     <i class="fa-solid fa-microchip"></i>
                     <h3>MVNA/E</h3>
-                    <p>Sua empresa operando no mercado móvel com a melhor cobertura do Brasil.</p>
+                    <p>Sua empresa operando no mercado móvel com a melhor cobertura do Brasil.</p>      <!--Box 2-->
                     <button>Saiba Mais</button>
                 </div>
+                
             </div>
         </section>
-        <footer>
+        
+        <footer>         <!--Rodapé da página-->
             <div id="footer_content">
+
                 <div id="footer_contacts">
                     <a href="../HTML/home.html"><img src="../IMG/logotelecall.png" alt="logo telecall"></a>
                     
-                    <div id="footer_socialmedia">
+                    <div id="footer_socialmedia">   <!--Parte das mídias no footer-->
                         <a href="https://www.instagram.com/telecallbr/" class="footer-link" id="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 
                         <a href="https://www.facebook.com/TelecallBr" class="footer-link" id="facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -121,7 +136,7 @@
                     </div>
                 </div>
 
-                <ul class="footer-list">
+                <ul class="footer-list">    <!--Parte de colunas do footer 1-->
                     <li><a href="#">Institucional</a></li>
                     <li><a href="../HTML/home.html#slide_testimonial">Depoimentos</a></li>
                     <li><a href="#">Wholesale</a></li>
@@ -133,7 +148,7 @@
                     <li><a href="#">Política e Privacidade</a></li>
                 </ul>
 
-                <ul class="footer-list">
+                <ul class="footer-list">     <!--Parte de colunas do footer 2-->
                     <li><h3>Contratos</h3></li>
                     <li><a href="https://www.telecall.com/wp-content/uploads/2023/01/manual-dos-telefones.pdf"
                        target="_blank" >Manual dos Telefones</a>
