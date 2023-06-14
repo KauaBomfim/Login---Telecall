@@ -35,7 +35,7 @@ form {
     margin-bottom: 40px;
     padding: 10px;
     line-height: 24px;
-    width: 400px;
+    max-width: 400px;
     font-family: 'Open Sans', sans-serif;
     border: 2px solid rgba(0, 0, 0, 0.212);
     border-radius: 10px;
@@ -179,4 +179,39 @@ a:hover {
     color: #42BB33;
     margin: 1px 0 5px 3px;
     display: none;
+}
+
+#icon-eye {
+    position: relative;
+    right: 50px;
+    top: 10px;
+    float: right;
+    background: url('../IMG/olho.png');
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+#icon-eye.hide {
+    background: url('../IMG/olho-cortado.png');
+    background-size: cover;
+}
+
+
+#icon-eye2 {
+    float: right;
+    position: relative;
+    right: 50px;
+    top: 10px;
+    background: url('../IMG/olho.png');
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+#icon-eye2.hide {
+    background: url('../IMG/olho-cortado.png');
+    background-size: cover;
 }

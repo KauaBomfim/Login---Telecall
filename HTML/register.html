@@ -33,7 +33,7 @@
             <span class="span-right">Nome Válido ✓</span>
         </div>
 
-        <div>
+        <div>       <!--Data de Nascimento-->
             <label for="dataNasc" class="lbl-tittle">Data de nascimento</label>
             <input type="date" id="dataNasc" class="inputs required">
             <span class="span-required">Preencha sua data de nascimento neste campo. </span>
@@ -97,6 +97,7 @@
             <label for="senha" class="lbl-tittle">Senha</label>
             <input type="password" id="senha" class="inputs required" name="senha" placeholder="Digite sua senha"
                 autocomplete="off" oninput="senhaValidate()">
+            <div id="icon-eye" onclick="showHide()"></div>
             <span class="span-required">Este campo deve possuir 8 caracteres alfabéticos. </span>
             <span class="span-right">De acordo ✓</span>
         </div>
@@ -105,6 +106,7 @@
             <label for="conf_senha" class="lbl-tittle">Confirme sua senha</label>
             <input type="password" id="conf_senha" class="inputs required" name="senha" autocomplete="off"
                 placeholder="Digite sua senha novamente" oninput="senhaComparar()">
+            <div id="icon-eye2" onclick="showHide2()"></div>
             <span class="span-required">Este campo precisa corresponder com o campo senha. </span>
             <span class="span-right">✓</span>
         </div>
@@ -138,12 +140,14 @@
         const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
 
+        /* Função para configurar o erro dos campos */
         function setError(index) {
             campos[index].style.border = '2px solid #e63636';
             spanright[index].style.display = '';
             spans[index].style.display = 'block';
         }
 
+        /* Função para retirar a config de erro dos campos */
         function removeError(index) {
             campos[index].style.border = '2px solid #42BB33';
             spans[index].style.display = '';
@@ -151,6 +155,7 @@
         }
 
 
+        /* Validação dos campos do formulário */
         function nameValidate() {
             if (campos[0].value.length < 15) {
                 setError(0);
@@ -233,6 +238,7 @@
             }
         }
 
+        /* Evento para a validação do campo de cpf */
         cpf.addEventListener('keypress', () => {
             let cpflength = cpf.value.length;
 
@@ -244,6 +250,7 @@
             }
         })
 
+        /* Função para guardar os campos nome, usuário e senha no localStorage */
         function cadastrar() {
             if (nameValidate && loginValidate && senhaValidate && senhaComparar) {
                 let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
@@ -266,6 +273,7 @@
             }
         }
 
+        /* Função para verificar se todas as validações anteriores estão corretas para cadastrar usuário */
         function validaDados() {
             if (nome.value == '' && nome.value.length < 15) {
                 setError(0);
@@ -310,7 +318,7 @@
 
     </script>
 
-    <!--JQuery das validações dos campos tel-->
+    <!--JQuery para validação do campo celular-->
     <script>
         $(document).ready(function () {
             $('body').on('focus', '#celular', function () {
@@ -335,6 +343,7 @@
         });
 
 
+        /* JQuery para validação do campo telefone */
         $(document).ready(function () {
             $('body').on('focus', '#telefone', function () {
                 var maskBehavior = function (val) {
@@ -357,12 +366,32 @@
             });
         });
 
+        /* script para a função de mostrar/ocultar os dados do campo senha */
+        const password = document.getElementById('senha');
+        const icon = document.getElementById('icon-eye');
+        const icon2 = document.getElementById('icon-eye2');
 
-        $(function () {
-            $("#cpf").inputmask({
-                mask: "999.999.999-99"
-            });
-        });
+        function showHide() {
+            if(password.type === 'password') {
+                password.setAttribute('type', 'text');
+                icon.classList.add('hide');
+            }
+            else {
+                password.setAttribute('type', 'password');
+                icon.classList.remove('hide');
+            }
+        }
+
+        function showHide2() {
+            if(conf_senha.type === 'password') {
+                conf_senha.setAttribute('type', 'text');
+                icon2.classList.add('hide');
+            }
+            else {
+                conf_senha.setAttribute('type', 'password');
+                icon2.classList.remove('hide');
+            }
+        }
     </script>
 
 </body>
