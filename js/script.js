@@ -1,3 +1,5 @@
+// Função slide de imagens
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     grabCursor: true,
@@ -32,6 +34,8 @@ function proximaImg(){
     document.getElementById('radio'+cont).checked = true
 }
 
+// Função do botão Mobile para menu
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu() {
@@ -41,5 +45,34 @@ function toggleMenu() {
 
 btnMobile.addEventListener('click', toggleMenu);
 
+// Função dark mode
 
+const chk = document.getElementById('chk');
 
+// Toggle dark mode 
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+}
+
+// Load light or dark mode
+function loadTheme() {
+    const darkMode = localStorage.getItem('dark');
+
+    if (darkMode) {
+        toggleDarkMode();
+    }
+}
+
+loadTheme();
+
+chk.addEventListener('change', function () {
+    toggleDarkMode();
+
+    // Save or remove dark mode
+    localStorage.removeItem('dark');
+
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('dark', 1);
+    }
+});

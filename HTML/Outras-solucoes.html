@@ -12,78 +12,79 @@
         <title>Outras Soluções - Telecall</title>
     </head>
     <body>
-        <header class="cabeçalho_home">
+        <header class="cabeçalho_home">     <!--Menu Telecall-->
             <a href="../HTML/home.html" id="logo"><img src="../IMG/icontelecall.png" alt="logo da telecall"/></a>
-            <nav id="menucp">
-                <ul id="item-menu">
+            <nav id="menu">
+                <ul id="item-menu">      <!--Itens do menu telecall-->
 
-                    <li class="dropdown">
-                        <a href="../HTML/Internet.html">Internet</a>    <!--item do menu-->
+                    <li class="dropdown">  
+                        <a href="../HTML/Internet.html">Internet</a>     <!--Item principal-->
                         
                         <div class="drop-menu">
                             <a href="">Internet Dedicada</a>
-                            <a href="">Banda Larga</a>          <!--Dropdown de itens do menu-->
+                            <a href="">Banda Larga</a>          <!--Itens dropdown-->
                             <a href="">Wi-Fi</a>
                         </div>
                     </li>
 
                     <li class="dropdown">
-                        <a href="../HTML/telefonia.html">Telefonia</a>   <!--item do menu-->
+                        <a href="../HTML/telefonia.html">Telefonia</a>      <!--Item principal-->
 
                         <div class="drop-menu">
                             <a href="">PABX IP Virtual</a>
-                            <a href="">E1 / SIP Trunk</a>       <!--Dropdown de itens do menu-->
+                            <a href="">E1 / SIP Trunk</a>       <!--Itens dropdown-->
                             <a href="">Números 0800/40xx</a>
                         </div>
                     </li>
 
                     <li class="dropdown">
-                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>  <!--item do menu-->
+                        <a href="../HTML/Rede-infra.html">Rede e infraestrutura</a>     <!--Item principal-->
 
                         <div class="drop-menu">
                             <a href="">Ponto-a-Ponto</a>
-                            <a href="">MPLS</a>     
-                            <a href="">FIbra Apagada e Dutos</a>        <!--Dropdown de itens do menu-->
+                            <a href="">MPLS</a>                 <!--Itens dropdown-->
+                            <a href="">FIbra Apagada e Dutos</a>
                             <a href="">Co-locations</a>
                         </div>
                     </li>
 
                     <li class="dropdown">
-                        <a href="../HTML/mob.html">Mobilidade</a>    <!--item do menu-->
+                        <a href="../HTML/mob.html">Mobilidade</a>       <!--Item principal-->
 
                         <div class="drop-menu">
-                            <a href="">Celular Empresarial</a>      <!--Dropdown de itens do menu-->
+                            <a href="">Celular Empresarial</a>      <!--Itens dropdown-->
                             <a href="">MVNA/E</a>
                         </div>
                     </li>
 
                     <li class="dropdown">
-                        <a href="../HTML/cpaas.html">CPaas</a>   <!--item do menu-->
+                        <a href="../HTML/cpaas.html">CPaas</a>      <!--Item principal-->
 
                         <div class="drop-menu">
                             <a href="../HTML/2fa.html">2FA</a>
-                            <a href="../HTML/numero-mask.html">Número Máscara</a>
-                            <a href="../HTML/google-verified.html">Google Verified Calls</a>        <!--Dropdown de itens do menu-->
+                            <a href="../HTML/numero-mask.html">Número Máscara</a>       <!--Itens dropdown-->
+                            <a href="../HTML/google-verified.html">Google Verified Calls</a>
                             <a href="../HTML/SMS.html">SMS Programável</a>
                         </div>
                     </li>
 
                     <li class="dropdown">
-                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>   <!--item do menu-->
+                        <a href="../HTML/Outras-solucoes.html">Outras soluções</a>      <!--Item principal-->
 
                         <div class="drop-menu">
-                            <a href="">Outsourcing de Hardware</a>      <!--Dropdown de itens do menu-->
-                            <a href="../HTML/eventos.html">Eventos</a>
+                            <a href="">Outsourcing de Hardware</a>
+                            <a href="../HTML/eventos.html">Eventos</a>      <!--Itens dropdown-->
                         </div>
                     </li>
 
                 </ul>
-                <button id="btn-mobile-cpaas" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>  <!--Botão de menu para celular-->
+                <button id="btn-mobile" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>        <!--Butão mobile telecall-->
             </nav>
 
-            <div class="btn-cpaas">
+            <div class="btn-user">      <!--Butão da área do cliente-->
                 <a href="login.html"><button id="btn-cliente"><i class="fa-solid fa-user"></i><p>Área do cliente</p></button></a>
             </div>
+
         </header>
 
         <section class="header_sol">        <!--Apresentação Soluções-->
@@ -129,6 +130,16 @@
                         <a href="https://www.linkedin.com/company/telecall/" class="footer-link" id="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 
                         <a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" class="footer-link" id="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                    <div id="darkmode">
+                        <input type="checkbox" class="checkbox" id="chk" onclick="toggleDarkMode()">
+
+                        <label class="btn-dark" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
                     </div>
                 </div>
 

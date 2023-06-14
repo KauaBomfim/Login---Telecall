@@ -29,7 +29,9 @@ html {
 
 body {
     font-size: 100%;
+    transition: background 0.2s linear;
 }
+
     /*CSS MENU*/
 header {
     width: 100%;
@@ -2455,6 +2457,131 @@ footer {
     width: 70%;
 }
 
+/*Modo dark*/
+
+body.dark {
+    background-color: #232c35;
+    color: #fff;
+}
+
+.dark .box-rede {
+    background-color: #232c35;
+}
+
+.dark .testimonial p {
+    color: #fff;
+}
+
+.dark .contain_box p {
+    color: #fff;
+}
+
+.dark .testimonial span {
+    color: #fff;
+}
+
+.dark .box_net p, .dark .box_net h3 {
+    color: #fff;
+}
+
+.dark .box_event p, .dark .box_event h3 {
+    color: #fff;
+}
+
+.dark .box_mob p, .dark .box_mob h3 {
+    color: #fff;
+}
+
+.dark .box_sol p, .dark .box_sol h3 {
+    color: #fff;
+}
+
+.dark .box_tele p, .dark .box_tele h3 {
+    color: #fff;
+}
+
+.dark .box_uso p, .dark .box_uso h3 {
+    color: #fff;
+}
+
+.dark .box_rede p, .dark .box_rede h3 {
+    color: #fff;
+}
+
+.dark .box_solucoes p, .dark .box_solucoes h3 {
+    color: #fff;
+}
+
+.dark .seguraca_2fa h2, .dark .seguraca_2fa #seguro_2fa {
+    color: #fff;
+}
+
+.dark #NM_sub {
+    color: #fff;
+}
+
+.dark .sobre_gvc #gvc_sub {
+    color: #fff;
+}
+
+.dark .sobre_gvc #gvc_sub strong {
+    color: var(--cpaas-cor1);
+}
+
+.dark #sms_sub {
+    color: #fff;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.btn-dark {
+    top: 150px;
+    width: 50px;
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    transform: scale(1.3);
+}
+
+.btn-dark .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .btn-dark .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .btn-dark {
+        top: 20px;
+    }
+}
+
 /* Media Querys*/
 
     /*MEDIA MENU*/
@@ -2518,6 +2645,11 @@ footer {
     .dropdown:hover .drop-menu {
         display: none;
     }
+
+    .btn-user {
+        position: relative;
+        right: 30px;
+    }
     
 }
 
@@ -2562,7 +2694,7 @@ footer {
     .contain_plano img {
         width: 250px;
         height: 200px;
-        margin-left: 80px;
+        margin-left: 70px;
     }
 
     .topico_contain {
@@ -2644,7 +2776,7 @@ footer {
     }
     
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
     .topico_contain {
         width: 300px;
     }
@@ -2698,6 +2830,11 @@ footer {
         width: 200px;
         margin-left: 20px;
     }
+
+    .box_net {
+        width: 90%;
+        margin: auto;
+    }
 }
 
     /*MEDIA TELEFONIA*/
@@ -2732,6 +2869,11 @@ footer {
         width: 200px;
         margin-left: 20px;
     }
+
+    .box_tele {
+        width: 90%;
+        margin: auto;
+    }
 }
 
     /*MEDIA REDE E INFRAESTRTURA*/
@@ -2758,6 +2900,11 @@ footer {
     #content_rede {
         display: flex;
         flex-direction: column;
+    }
+
+    .box_rede {
+        width: 90%;
+        margin: auto;
     }
 }
 
@@ -2793,6 +2940,11 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+    .box_mob {
+        width: 90%;
+        margin: auto;
+    }
 }
 
     /*MEDIA SOLUÇÕES*/
@@ -2819,6 +2971,11 @@ footer {
     #content_sol {
         display: flex;
         flex-direction: column;
+    }
+
+    .box_sol {
+        width: 90%;
+        margin: auto;
     }
 }
 
@@ -2859,9 +3016,6 @@ footer {
     /*MEDIA CPAAS*/
 
 @media screen and (max-width: 768px) {
-    .btn-cpaas {
-        width: 100px;
-    }
 
     #title_cpaas {
         font-size: 20px;
@@ -2881,7 +3035,7 @@ footer {
     }
     
     .sobre_cpaas h1 {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     #text_sobre {
@@ -2890,7 +3044,8 @@ footer {
     }
 
     #text_sobre p {
-        width: 280px;
+        width: 250px;
+        font-size: 14px;
         margin-top: 40px;
     }
 
@@ -2913,6 +3068,18 @@ footer {
         margin-top: 50px;
     }
 
+    #info_digital h1 {
+        font-size: 25px;
+    }
+
+    #info_digital p {
+        font-size: 16px;
+    }
+
+    #info_digital strong {
+        font-size: 20px;
+    }
+
     #contain_uso {
         display: flex;
         width: 320px;
@@ -2928,6 +3095,7 @@ footer {
         gap: 50px;
         margin-top: 100px;
         margin-bottom: 150px;
+        width: 100%;
     }
 
     .usuarios_cpaas h1 {
@@ -2942,6 +3110,33 @@ footer {
 
     .usuarios_cpaas img {
         width: 100%;
+    }
+
+    .uso_cpaas {
+        width: 100%;
+    }
+
+    .box_uso {
+        width: 100%;
+        gap: 18px;
+    }
+
+    .solucoes_cpaas {
+        width: 100%;
+    }
+
+    .box_solucoes {
+        width: 320px;
+    }
+
+    .sobre_cpaas img {
+        position: relative;
+        right: 20px;
+    }
+
+    .digital_cpaas img {
+        position: relative;
+        right: 30px;
     }
 }
 
@@ -2988,6 +3183,10 @@ footer {
         width: 150px;
         margin: 0px 0px 50px 20px;
     }
+
+    .sobre_2fa img {
+        width: 280px;
+    }
     
     #text_2fa {
         display: flex;
@@ -2998,6 +3197,7 @@ footer {
     #text_2fa p {
         width: 300px;
         margin-left: 20px;
+        font-size: 16px;
     }
 
     #vantagens_2fa h3 {
@@ -3008,8 +3208,20 @@ footer {
         margin: 20px 0px 0px 20px;
     }
 
+    #seguro_2fa {
+        font-size: 20px;
+    }
+
     .seguraca_2fa {
         margin: 50px 0px 0px 20px;
+    }
+
+    .seguraca_2fa h2 {
+        font-size: 20px;
+    }
+
+    .seguraca_2fa p {
+        font-size: 20px;
     }
 
     .funcao_2fa h1 {
@@ -3058,6 +3270,10 @@ footer {
         width: 150px;
         margin: 0px 0px 50px 20px;
     }
+
+    #NM_sub {
+        font-size: 20px;
+    }
     
     #vantagens_NM {
         display: flex;
@@ -3088,7 +3304,7 @@ footer {
     }
     
     .recursos_NM h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
     
     .recursos_NM hr {
@@ -3097,7 +3313,7 @@ footer {
     
     .recursos_NM p {
         width: 70%;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .funcao_NM h1 {
@@ -3148,6 +3364,14 @@ footer {
         font-size: 25px;
         color: #333333e0;
     }
+
+    #gvc_sub {
+        font-size: 16px;
+    }
+
+    #gvc_sub strong {
+        font-size: 20px;
+    }
     
     .sobre_gvc hr {
         width: 150px;
@@ -3161,7 +3385,7 @@ footer {
     }
     
     #vantagens_gvc p {
-        font-size: 25px;
+        font-size: 20px;
         margin: 20px 0px 0px 20px;
     }
 
@@ -3256,6 +3480,10 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    #box_sms img {
+        width: 300px;
+    }
     
     #vantagens_sms {
         display: flex;
@@ -3288,7 +3516,7 @@ footer {
     }
     
     #info_sms li {
-        font-size: 20px;
+        font-size: 16px;
     }
     
     .funcao_sms h1 {
@@ -3329,7 +3557,7 @@ footer {
 
     #menucp:hover #item-menu-cpaas {
         display: block;
-        height: calc(40vh - 70px);
+        height: calc(40vh - 30px);
         visibility: visible;
     }
 
