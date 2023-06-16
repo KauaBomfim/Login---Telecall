@@ -199,6 +199,14 @@ a:hover {
     transition-duration: 0.4s;
 }
 
+#msgError {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--cor1);
+    display: none;
+}
+
     /*Media query*/
 
 @media screen and (max-width: 425px){

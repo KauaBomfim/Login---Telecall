@@ -39,14 +39,15 @@
                 <h2 class="titulo" id="secundario">Logue-se com a Telecall</h2>
                 <p class="descricao" id="descricao-secundaria">De forma rápida e segura:</p>
                 <form class="form" method="post" autocomplete="on">
-                    <label class="label-input" for=""><i class="fa-solid fa-user"></i><input type="text" placeholder="Login"></label>
+                    <label id="msgError">Usuário ou senha inválidos</label>
 
-                    <label class="label-input" for=""><i class="fa-solid fa-lock"></i><input type="password" placeholder="Senha"></label>
+                    <label class="label-input" id="userLabel" for=""><i class="fa-solid fa-user"></i><input type="text" placeholder="Login" id="user"></label>
 
-                    <a href="home.html"><button class="btn" id="entrar">ENTRAR</button></a>
+                    <label class="label-input" id="senhaLabel" for=""><i class="fa-solid fa-lock"></i><input type="password" placeholder="Senha" id="senha"></label>
+
+                    <a href="../HTML/home.html"><button id="entrar" class="btn" type="button">ENTRAR</button></a>
                 </form>
             </div>
         </section>
     </main>
-</body>
 </html>

@@ -11,13 +11,15 @@
     <link rel="shortcut icon" href="../IMG/icontelecall.png" type="image/x-icon" />
     <link rel="stylesheet" href="../CSS/register.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <script src="text/javascript"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
     <script src="https://cdn.rawgit.com/igorescobar/jQuery-Mask-Plugin/master/src/jquery.mask.js"></script>
 </head>
 
 <body>
+    <script type="text/javascript" src="../js/register.js"></script>
+
     <header class="cabeçalho_registro">
         <a href="../HTML/home.html"><img src="../IMG/logotelecall.png" alt="logo da telecall" /></a>
     </header>
@@ -33,9 +35,17 @@
             <span class="span-right">Nome Válido ✓</span>
         </div>
 
+        <div>       <!--Nome Materno-->
+            <label for="nome-mat" class="lbl-tittle">Nome Materno</label>
+            <input type="text" id="nome-mat" class="inputs required" name="nome-mat" placeholder="Digite aqui o nome materno"
+            maxlength="60" oninput="nameMatValidate()">
+            <span class="span-required">Nome materno deve ter no mínimo 15 caracteres. </span>
+            <span class="span-right">Nome Válido ✓</span>
+        </div>
+
         <div>       <!--Data de Nascimento-->
             <label for="dataNasc" class="lbl-tittle">Data de nascimento</label>
-            <input type="date" id="dataNasc" class="inputs required">
+            <input type="date" id="dataNasc" class="inputs required" oninput="validarData()">
             <span class="span-required">Preencha sua data de nascimento neste campo. </span>
             <span class="span-right">Data Válida ✓</span>
         </div>
@@ -132,7 +142,8 @@
         const campos = document.querySelectorAll('.required');
         const spans = document.querySelectorAll('.span-required');
         const spanright = document.querySelectorAll('.span-right');
-        const spancad = document.querySelector('#span_cad')
+        const spancad = document.querySelector('#span_cad');
+        const nomeMat = document.querySelector('#nome-mat');
         const cpf = document.querySelector('#cpf');
         const dataNasc = document.querySelector('#dataNasc');
         const celular = document.querySelector("#celular");
@@ -156,7 +167,7 @@
 
 
         /* Validação dos campos do formulário */
-        function nameValidate() {
+        function nameValidate() {   /*Validando nome*/
             if (campos[0].value.length < 15) {
                 setError(0);
             }
@@ -165,8 +176,8 @@
             }
         }
 
-        function dataValidate() {
-            if (campos[1].value == '') {
+        function nameMatValidate() {   /*Validando nome materno*/
+            if (campos[1].value.length < 15) {
                 setError(1);
             }
             else {
@@ -174,17 +185,17 @@
             }
         }
 
-        function cpfValidate() {
-            if (campos[2].value.length != 14) {
-                setError(2);
-            }
+        function validarData(){   /*Validando data de nascimento*/
+    	    if(dataNasc.value == ''){
+    		    setError(2);
+    	    }
             else {
                 removeError(2);
             }
         }
 
-        function number1Validate() {
-            if (campos[3].value.length != 15) {
+        function cpfValidate() {   /*Validando cpf*/
+            if (campos[3].value.length != 14) {
                 setError(3);
             }
             else {
@@ -192,8 +203,8 @@
             }
         }
 
-        function number2Validate() {
-            if (campos[4].value.length != 14) {
+        function number1Validate() {   /*Validando número de celular*/
+            if (campos[4].value.length != 15) {
                 setError(4);
             }
             else {
@@ -201,8 +212,8 @@
             }
         }
 
-        function enderecoValidate() {
-            if (campos[5].value.length < 8) {
+        function number2Validate() {   /*Validando número de telefone*/
+            if (campos[5].value.length != 14) {
                 setError(5);
             }
             else {
@@ -210,8 +221,8 @@
             }
         }
 
-        function loginValidate() {
-            if (campos[6].value.length < 6) {
+        function enderecoValidate() { /*Validando endereço*/
+            if (campos[6].value.length < 8) {
                 setError(6);
             }
             else {
@@ -219,24 +230,34 @@
             }
         }
 
-        function senhaValidate() {
-            if (campos[7].value.length < 8) {
+        function loginValidate() {   /*Validando nome de login*/
+            if (campos[7].value.length < 6) {
                 setError(7);
             }
             else {
                 removeError(7);
+            }
+        }
+
+        function senhaValidate() {   /*Validando senha*/
+            if (campos[8].value.length < 8) {
+                setError(8);
+            }
+            else {
+                removeError(8);
                 senhaComparar();
             }
         }
 
-        function senhaComparar() {
-            if (campos[7].value == campos[8].value && campos[8].value.length >= 8) {
-                removeError(8);
+        function senhaComparar() {   /*Validando a confirmação de senha*/
+            if (campos[8].value == campos[9].value && campos[9].value.length >= 8) {
+                removeError(9);
             }
             else {
-                setError(8);
+                setError(9);
             }
         }
+
 
         /* Evento para a validação do campo de cpf */
         cpf.addEventListener('keypress', () => {
@@ -268,7 +289,7 @@
                 spancad.setAttribute('style', 'display:block')
 
                 setTimeout(() => {
-                    window.location.href = 'file:///C:/Users/Pichau/Desktop/Login%20-%20Telecall%20(novo)/HTML/login.html'
+                    window.location.href = 'file:///media/removable/PHELIPE/Login%20-%20Telecall/HTML/login.html'
                 }, 2000);
             }
         }
@@ -279,47 +300,49 @@
                 setError(0);
                 campos[0].focus();
             }
-            else if (dataNasc.value == '') {
+            else if (nomeMat.value == '' && nomeMat.value.length < 15) {
                 setError(1);
                 campos[1].focus();
             }
-            else if (cpf.value.length != 14) {
+            else if (dataNasc.value == '') {
                 setError(2);
                 campos[2].focus();
             }
-            else if (campos[3].value.length != 15) {
+            else if (cpf.value.length != 14) {
                 setError(3);
                 campos[3].focus();
             }
-            else if (campos[4].value.length != 14) {
+            else if (campos[4].value.length != 15) {
                 setError(4);
                 campos[4].focus();
             }
-            else if (campos[5].value.length < 8) {
+            else if (campos[5].value.length != 14) {
                 setError(5);
                 campos[5].focus();
             }
-            else if (campos[6].value.length < 6) {
+            else if (campos[6].value.length < 8) {
                 setError(6);
                 campos[6].focus();
             }
-            else if (campos[7].value.length < 8) {
+            else if (campos[7].value.length < 6) {
                 setError(7);
                 campos[7].focus();
             }
-            else if (campos[8].value == '' && campos[8] != campos[7]) {
+            else if (campos[8].value.length < 8) {
                 setError(8);
                 campos[8].focus();
+            }
+            else if (campos[9].value == '' && campos[9] != campos[7]) {
+                setError(9);
+                campos[9].focus();
             }
             else {
                 cadastrar();
             }
         }
 
-    </script>
 
-    <!--JQuery para validação do campo celular-->
-    <script>
+        /*JQuery para validação do campo celular*/
         $(document).ready(function () {
             $('body').on('focus', '#celular', function () {
                 var maskBehavior = function (val) {
@@ -365,6 +388,7 @@
                 $(this).mask(maskBehavior, options);
             });
         });
+        
 
         /* script para a função de mostrar/ocultar os dados do campo senha */
         const password = document.getElementById('senha');
@@ -393,7 +417,6 @@
             }
         }
     </script>
-
 </body>
 
 </html>
